@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
 </head>
+
 <body>
   <header class="page-header">
-    <div class="logo-wrapper">
-      <a class="logo page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Pink">
-      </a>
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
     <div class="page-header__wrapper">
-      <section class="download">
-        <h2 class="visually-hidden">Загрузка приложения</h2>
-        <div class="download__image">
-          <img src="http://placehold.it/100x150" alt="Screenshot приложения">
+      <div class="logo-wrapper">
+        <a class="logo page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Pink">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <div class="download__wrapper">
-          <a href="#" class="download__button">Скачать приложение</a><br>
+      </nav>
+    </div>
+    <section class="download">
+      <h2 class="visually-hidden">Загрузка приложения</h2>
+      <div class="download__image">
+        <img src="http://placehold.it/100x150" alt="Screenshot приложения">
+      </div>
+      <div class="download__wrapper">
+        <div class="download__link">
+          <a href="#" class="download__button">Скачать приложение</a>
+        </div>
+        <div class="download__logo">
           <span class="download__item">Ios</span>
           <span class="download__item">Android</span>
           <span class="download__item">Windows</span>
         </div>
-      </section>
-    </div>
+        <div class="download__platform">
+          <p class="download__availability">Доступно для Iphone, iPad,Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="offer">
+      <h1 class="visually-hidden">Приложение Pink</h1>
       <header class="offer__header">
         <h2 class="visually-hidden">Предложения</h2>
         <p class="offer__question">Устали от серости мегаполиса?</p>
@@ -69,14 +78,16 @@
           <p class="opportunity__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
         </div>
-        <img src="http://placehold.it/100x150" alt="Screenshot приложения">
+        <div class="offer__image">
+          <img src="http://placehold.it/100x150" alt="Screenshot приложения">
+        </div>
       </div>
     </section>
-    <!-- <section class="">
+    <!-- <section class="comment">
           <h2 class="visually-hidden">Отзывы</h2>
-          <div class="">
-            <p class="">Николай Петров</p>
-            <blockquote class="">Это приложение перевернуло мой мир и позволило по-новому
+          <div class="comment__item">
+            <p class="comment__name">Николай Петров</p>
+            <blockquote class="comment__item">Это приложение перевернуло мой мир и позволило по-новому
               взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
 
           </div>
@@ -100,4 +111,5 @@
       </section> -->
   </main>
 </body>
+
 </html>
