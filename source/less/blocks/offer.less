@@ -27,3 +27,39 @@
     text-align: center;
   }
 }
+
+@media (min-width: 660px) {
+  .offer__opportunity {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .offer__question,
+  .offer__slogan {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offer__opportunity {
+    min-width: 1200px;
+  }
+
+  .offer__oportunity-wrapper {
+    display: flex;
+  }
+
+  .offer__item {
+    background: url("/source/img/iphone-screen-1-desktop@1x.png") no-repeat;
+  }
+
+  .offer__image {
+    .visHid();
+  }
+
+  .offer__oportunity-image {
+    width: 320px;
+    height: 370px;
+    background: url("/source/img/icon-timer.svg") no-repeat;
+  }
+}

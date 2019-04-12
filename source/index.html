@@ -9,49 +9,50 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <nav class="main-nav">
       <div class="logo-wrapper">
         <a class="logo page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Pink">
+          <img class="" src="http://placehold.it/100x50" width="" height="" alt="Панорама дня">
         </a>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <section class="download">
       <h2 class="visually-hidden">Загрузка приложения</h2>
-      <div class="download__image">
-        <img src="img/bg-back-mobile@1x.jpg" alt="Screenshot приложения">
-        <img src="img/iphone-hand-mobile@1x.png" alt="Screenshot приложения">
-      </div>
+
       <div class="download__wrapper">
-        <div class="download__link">
-          <a class="download__button" href="#">Скачать приложение</a>
+        <div class="download__image">
+          <div class="download__image-phone"></div>
         </div>
-        <div class="download__logo">
-          <span class="download__item">Ios</span>
-          <span class="download__item">Android</span>
-          <span class="download__item">Windows</span>
-        </div>
-        <div class="download__platform">
-          <p class="download__availability">Доступно для Iphone, iPad,Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download__column">
+          <p class="download__agitation">Взгляните на жизнь иначе</p>
+          <div class="download__link">
+            <a class="download__button" href="#">Скачать приложение</a>
+          </div>
+          <div class="download__logo">
+            <span class="download__item">Ios</span>
+            <span class="download__item">Android</span>
+            <span class="download__item">Windows</span>
+          </div>
+          <div class="download__platform">
+            <p class="download__availability">Доступно для Iphone, iPad,Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </div>
     </section>
@@ -62,28 +63,46 @@
       <header class="offer__header">
         <h2 class="visually-hidden">Предложения</h2>
         <p class="offer__question">Устали от серости мегаполиса?</p>
-        <p class="offer__slogan">Нам есть, что вам предложить!</p>
+        <p class="offer__slogan">Нам есть, что вам<br>предложить!</p>
       </header>
+
       <div class="offer__opportunity">
-        <div class="opportunity offer__item">
-          <h3 class="opportunity__item-head">Поднимает настроение</h3>
-          <p class="opportunity__item-body">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-            несколько кликов!</p>
-        </div>
-        <div class="opportunity offer__item">
-          <h3 class="opportunity__item-head">Меняет мир вокруг</h3>
-          <p class="opportunity__item-body">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-            усилить эффект</p>
-        </div>
-        <div class="opportunity offer__item">
-          <h3 class="opportunity__item-head">Заводит новых друзей</h3>
-          <p class="opportunity__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
+        <div class="offer__oportunity-wrapper">
+          <div class="opportunity offer__item">
+            <h3 class="opportunity__item-head">Поднимает настроение</h3>
+            <p class="opportunity__item-body">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </div>
+          <div class="opportunity offer__item">
+            <h3 class="opportunity__item-head">Меняет мир вокруг</h3>
+            <p class="opportunity__item-body">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </div>
+          <div class="opportunity offer__item">
+            <h3 class="opportunity__item-head">Заводит новых друзей</h3>
+            <p class="opportunity__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </div>
         </div>
         <div class="offer__image">
           <img src="img/iphone-screen-mobile@1x.png" alt="Screenshot приложения">
         </div>
       </div>
+      <div class="offer__opportunity">
+        <div class="offer__oportunity-wrapper">
+          <div class="offer__oportunity-image">
+          </div>
+          <div class="opportunity">
+            <h3 class="opportunity__item-head">Эффект на 24 часа!</h3>
+            <p class="opportunity__item-body">Британские ученые провели исследование и доказали,
+              что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="opportunity__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+        <div class="offer__oportunity-image"></div>
+      </div>
+
     </section>
     <!-- <section class="comment">
           <h2 class="visually-hidden">Отзывы</h2>
