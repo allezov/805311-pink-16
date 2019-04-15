@@ -1,8 +1,8 @@
 // задал временные цвета для наглядности расположения пока не размеченых элементов
 .page-footer {
   padding-top: 40px;
-  width: 500px;
-  height: 280px;
+  max-width: 320px;
+  margin: 0 auto;
 
   &__logo {
     background: green;
@@ -27,5 +27,22 @@
   &__develop-link {
     color: #283645;
     line-height: 18px;
+  }
+}
+
+@media (min-width: 660px) {
+  .page-footer {
+    max-width: 620px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    max-width: 940px;
   }
 }

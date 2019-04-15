@@ -1,16 +1,37 @@
 .page-main {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
+
+  .page-main__logo-image--panorama {
+    width: 100%;
+  }
+
+  .page-main__wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 660px) {
   .page-main {
-    min-width: 660px;
+    max-width: 660px;
+    margin: 0 auto;
+
+    .page-main__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 620px;
+      justify-content: space-between;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .page-main {
-    min-width: 1200px;
+    max-width: 1200px;
+
+    .page-main__wrapper {
+      max-width: 940px;
+    }
   }
 }

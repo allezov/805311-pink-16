@@ -1,5 +1,5 @@
 .page-header {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #1d2632;
 
@@ -12,10 +12,6 @@
     text-align: center;
   }
 
-  &__photo {
-    margin: 0;
-  }
-
   // &__logo{
   //   background-image: url(/source/img/logo-pink-white-mobile.svg);
   //   width: 100px;
@@ -26,12 +22,12 @@
 
 @media (min-width: 660px) {
   .page-header {
-    min-width: 660px;
+    max-width: 660px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-header {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
