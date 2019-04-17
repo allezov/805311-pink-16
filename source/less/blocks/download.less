@@ -25,15 +25,23 @@
     margin: 0;
   }
 
-  &__image {
-    min-height: 490px;
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  &__wrapper::before {
+    content: " ";
+    display: block;
+    height: 463px;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat;
   }
 
-  &__image-2 {
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-    height: 290px;
-  }
+  // &__image {
+
+  //   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+
+  // }
+
+  // &__image-2 {
+  //   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  //   height: 290px;
+  // }
 }
 
 @media (min-width: 660px) {
