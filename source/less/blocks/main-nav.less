@@ -1,3 +1,28 @@
 .main-nav {
   background-color: #283645;
 }
+
+.main-nav__toggle {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    background-color: #0f151b;
+  }
+
+  .main-nav__wrapper {
+    padding-left: 160px;
+  }
+}

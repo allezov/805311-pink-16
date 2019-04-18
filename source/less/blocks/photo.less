@@ -1,9 +1,22 @@
 .photo {
   &__wrapper-image {
-    background-image: url("/source/img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-mobile@1x.jpg");
     background-color: #2b3b4b;
     background-repeat: no-repeat;
-    width: 320px;
-    height: 240px;
+    height: 170px;
+  }
+}
+
+@media (min-width: 660px) {
+  .photo__wrapper-image {
+    height: 320px;
+    background: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__wrapper-image {
+    height: 390px;
+    background: url("../img/bg-back-desktop@1x.jpg");
   }
 }
