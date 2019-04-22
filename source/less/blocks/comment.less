@@ -1,17 +1,37 @@
 .comment {
   color: #283645;
   line-height: 24px;
-  padding-top: 25px;
-  min-height: 155px;
 
   &__user-name {
     font-weight: bold;
     margin: 0;
+    padding-top: 17px;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   &__time {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 300;
+  }
+}
+
+.comment__user-message {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.comment__user-likes-sum {
+  padding-left: 31px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__user-message {
+    min-height: 48px;
   }
 }

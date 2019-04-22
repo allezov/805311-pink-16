@@ -1,6 +1,6 @@
 .user-photo {
   width: 280px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   &__comment {
     background-color: #f2f2f2;
@@ -10,18 +10,38 @@
     text-transform: uppercase;
     background-color: #d22856;
     color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 35px;
+    width: 140px;
+    height: 36px;
+    padding-left: 21px;
+    box-sizing: border-box;
   }
+}
+
+.user-photo__picture {
+  position: relative;
+  margin-bottom: -7px;
 }
 
 .user-photo--panorama {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .user-photo__comment-panorama {
   width: 280px;
   margin: 0 auto;
 }
+
+.user-photo__comment-wrapper {
+  padding-left: 18px;
+  padding-bottom: 19px;
+}
+
 
 @media (min-width: 660px) {
   .user-photo {
@@ -36,9 +56,13 @@
   .user-photo--panorama {
     width: 100%;
   }
+
+  .user-photo__comment-wrapper {
+    padding-left: 27px;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .user-photo {
     .user-photo__comment-panorama {
       min-width: 940px;

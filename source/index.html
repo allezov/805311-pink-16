@@ -10,13 +10,13 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
       <div class="logo-wrapper">
         <a class="logo page-header__logo">
-          <img class="" src="http://placehold.it/100x50" width="" height="" alt="Панорама дня">
+          <img class="" src="img/logo-pink-white-mobile.svg" width="" height="" alt="Панорама дня">
         </a>
       </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -37,22 +37,18 @@
     <section class="download">
       <h2 class="visually-hidden">Загрузка приложения</h2>
       <div class="download__wrapper">
-        <!-- <div class="download__image">
-          <div class="download__image-2"></div>
-        </div> -->
         <div class="download__column">
-          <p class="download__agitation">Взгляните на жизнь иначе</p>
+          <p class="download__agitation">Взгляните <br> на жизнь иначе</p>
           <div class="download__link">
             <a class="download__button" href="#">Скачать приложение</a>
           </div>
           <div class="download__logo">
-            <span class="download__item">Ios</span>
-            <span class="download__item">Android</span>
-            <span class="download__item">Windows</span>
+            <span class="download__item download__item--apple"></span>
+            <span class="download__item download__item--android">
+            </span>
+            <span class="download__item download__item--windows"></span>
           </div>
-          <div class="download__platform">
-            <p class="download__availability">Доступно для Iphone, iPad,Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+          <p class="download__availability">Доступно для Iphone, iPad,Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </section>
@@ -63,13 +59,10 @@
       <header class="offer__header">
         <h2 class="visually-hidden">Предложения</h2>
         <p class="offer__question">Устали от серости мегаполиса?</p>
-        <p class="offer__slogan">Нам есть, что вам<br>предложить!</p>
+        <p class="offer__slogan">Нам есть, что вам <br><br class="offer__slogan-gap">предложить!</p>
       </header>
       <div class="offer__opportunity">
         <div class="offer__opportunity-wrapper">
-          <div class="offer__image">
-            <img src="img/iphone-screen-mobile@1x.png" alt="Screenshot приложения">
-          </div>
           <div class="offer__item">
             <div class="opportunity offer__item-image-1 ">
               <h3 class="opportunity__item-head">Поднимает настроение</h3>
@@ -77,29 +70,33 @@
                 несколько кликов!</p>
             </div>
             <div class="opportunity offer__item-image-2 ">
-              <h3 class="opportunity__item-head">Меняет мир вокруг</h3>
+              <h3 class="opportunity__item-head">Меняет мир<br class="opportunity__item-head--gap">вокруг</h3>
               <p class="opportunity__item-body">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
                 усилить эффект</p>
             </div>
             <div class="opportunity offer__item-image-3">
-              <h3 class="opportunity__item-head">Заводит новых друзей</h3>
+              <h3 class="opportunity__item-head">Заводит<br class="opportunity__item-head--gap">новых друзей</h3>
               <p class="opportunity__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                 заводите
                 новых</p>
             </div>
           </div>
+          <div class="offer__image">
+            <!-- <img src="img/iphone-screen-mobile@1x.png" alt="Screenshot приложения"> -->
+          </div>
         </div>
       </div>
-      <div class="offer__opportunity offer__opportunity--qwerty">
+      <div class="offer__opportunity offer__opportunity--time">
         <div class="offer__opportunity-wrapper">
-          <div class="offer__opportunity-image">
-          </div>
-          <div class="opportunity opportunity--qwerty">
-            <h3 class="opportunity__item-head">Эффект на 24 часа!</h3>
-            <p class="opportunity__item-body">Британские ученые провели исследование и доказали,
+          <div class="opportunity opportunity--time">
+            <h3 class="opportunity__item-head opportunity__item-head--time">Эффект<br class="offer__opportunity-gap"> на
+              24 часа!</h3>
+            <p class="opportunity__item-body opportunity__item-body--time">Британские ученые провели исследование и доказали,
               что положительный эффект от использования приложения длится целые сутки!
             </p>
             <a class="opportunity__link" href="#">Узнать больше об исследовании</a>
+          </div>
+          <div class="offer__opportunity-image">
           </div>
         </div>
       </div>
@@ -131,6 +128,27 @@
           </div>
       </section> -->
   </main>
+  <footer class="page-footer page-footer--index">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-image "></a>
+      </div>
+      <div class="page-footer__social-links social-links">
+        <a class="social-links__item social-links__item--tw" href="https://twitter.com/"></a>
+        <a class="social-links__item social-links__item--fb" href="https://www.facebook.com/"></a>
+        <a class="social-links__item social-links__item--video" href="https://www.youtube.com/"></a>
+      </div>
+      <div class="page-footer__develop">
+        <a class="page-footer__develop-link" href="https://htmlacademy.ru/">
+          <svg class="page-footer__develop-link-icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60">
+            <path fill="#2E368F"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          </svg>
+          Разработано</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
