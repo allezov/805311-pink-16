@@ -46,10 +46,6 @@
 
 @media (min-width: 660px) {
   .page-footer {
-
-    max-width: 620px;
-
-    margin: 0 auto;
     padding: 0;
     padding-top: 35px;
 
@@ -60,6 +56,8 @@
 
   .page-footer__wrapper {
     min-height: 128px;
+    width: 620px;
+    margin: 0 auto;
     outline: 2px solid green;
     display: flex;
     flex-direction: row;
@@ -67,12 +65,10 @@
   }
 
   .page-footer__logo {
-    outline: 2px solid blue;
     margin: 0;
   }
 
   .page-footer__social-links {
-    outline: 2px solid blue;
     width: 150px;
     height: 55px;
     margin: 0;
@@ -84,7 +80,6 @@
   }
 
   .page-footer__develop-link {
-    outline: 2px solid blue;
     position: relative;
     padding: 20px 0 0 20px;
     display: block;
@@ -100,8 +95,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    max-width: 940px;
+  .page-footer__wrapper {
+    width: 940px;
   }
 
   .page-footer__develop-link {

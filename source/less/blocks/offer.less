@@ -1,7 +1,7 @@
 .offer {
   &__header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
   }
 
   &__opportunity {
@@ -9,16 +9,16 @@
   }
 
   &__opportunity-wrapper {
-    width: 280px;
-    margin: 0 auto;
-    padding-top: 61px;
+    // margin: 0 auto;
+    padding-top: 93px;
   }
 
   &__question {
-    margin-top: 45px;
-    margin-bottom: 37px;
+    margin-top: 40px;
+    margin-bottom: 33px;
     font-size: 24px;
     font-weight: 300;
+    line-height: 28px;
     color: #283645;
   }
 
@@ -26,6 +26,8 @@
     margin: 0;
     margin-bottom: 25px;
     font-size: 24px;
+    line-height: 26px;
+    font-weight: 300;
     color: #283645;
   }
 
@@ -42,6 +44,11 @@
   }
 }
 
+.offer__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .offer__slogan-gap {
   display: none;
 }
@@ -49,19 +56,18 @@
 @media (min-width: 660px) {
   .offer__opportunity {
     display: flex;
-    margin-bottom: 83px;
+    margin-bottom: 51px;
   }
 
   .offer__header {
     margin: 0;
-    letter-spacing: -1px;
   }
 
   .offer__opportunity-wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 620px;
+    width: auto;
     position: relative;
     // margin-right: 20px;
     padding: 0;
@@ -74,22 +80,22 @@
   .offer__question {
     font-size: 40px;
     margin-top: 60px;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 
   .offer__slogan {
     font-size: 40px;
+    line-height: 24px;
   }
 
   .offer__opportunity-image {
-    background: url("../img/icon-timer.svg") no-repeat 0 0;
-    background-size: 80%;
-    position: absolute;
-    top: -39px;
-    left: 0;
     width: 300px;
-    height: 300px;
-    fill: #453528;
+    outline: 2px solid teal;
+  }
+
+  .offer__opportunity-image-time {
+    width: 240px;
+    height: 280px;
   }
 
   .offer__opportunity--time {
@@ -105,34 +111,26 @@
   .offer__item {
     outline: 2px solid tomato;
     width: 320px;
-    margin-top: 110px;
+    margin-top: 108px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .offer {
+  .offer__wrappaer {
     background-color: #f2f2f2;
+    margin-top: 90px;
   }
 
   .offer__header {
     background-color: #ffffff;
-    margin-bottom: 94px;
   }
 
   .offer__opportunity {
-    margin: 0 auto;
-    margin-bottom: 118px;
+    margin-bottom: 28px;
   }
 
   .offer__opportunity-image {
-    top: -87px;
-    height: 350px;
-    background-size: 100%;
-  }
-
-  .offer__opportunity-wrapper {
-    width: 940px;
-    margin: 0 auto;
+    width: 370px;
   }
 
   .offer__question {
@@ -143,7 +141,6 @@
 
   .offer__slogan {
     font-size: 50px;
-    letter-spacing: -1px;
   }
 
   .offer__slogan-gap {
@@ -164,6 +161,11 @@
 
   .offer__opportunity--time {
     background-color: #f2f2f2;
+  }
+
+  .offer__opportunity-image-time {
+    width: 300px;
+    height: 355px;
   }
 
   .offer__item-image-1::before {
