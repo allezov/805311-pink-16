@@ -16,7 +16,11 @@
         <nav class="main-nav main-nav--closed">
           <div class="logo-wrapper">
             <a class="logo page-header__logo">
-              <img class="" src="img/logo-pink-white-mobile.svg" width="" height="" alt="Панорама дня">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img src="img/logo-pink-white-mobile.svg" width="226" height="30" alt="Логотип Pink»">
+                  </picture>
             </a>
           </div>
           <button class="main-nav__toggle" type="button"></button>
