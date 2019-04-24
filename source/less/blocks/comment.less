@@ -22,6 +22,30 @@
   margin-bottom: 10px;
 }
 
+.comment__user-likes--panorama::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 19px;
+  bottom: 18px;
+  left: 18px;
+  background: url("../img/icon-heart.svg") no-repeat;
+  background-size: 13px;
+}
+
+.comment__user-likes::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  bottom: 23px;
+  left: 18px;
+  background: url("../img/icon-heart.svg") no-repeat;
+  background-size: 13px;
+}
+
 .comment__user-likes-sum {
   padding-left: 31px;
   font-size: 12px;
@@ -33,5 +57,37 @@
 @media (min-width: @tablet-width) {
   .comment__user-message {
     min-height: 48px;
+    margin-bottom: 11px;
+  }
+
+  .comment__user-likes--panorama::after {
+    top: 28px;
+    left: 578px;
+  }
+
+  .comment__user-likes::after {
+    bottom: 20px;
+    left: 255px;
+  }
+
+  .comment__user-name {
+    padding-top: 23px;
+  }
+
+  .comment__user-likes-sum--panorama {
+    position: absolute;
+    top: 25px;
+    right: 59px;
+  }
+
+  .comment__user-likes-sum {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__user-likes--panorama::after {
+    top: 31px;
+    left: 901px;
   }
 }

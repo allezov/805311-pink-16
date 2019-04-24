@@ -1,5 +1,4 @@
 .user-photo {
-  width: 280px;
   margin-bottom: 20px;
 
   &__comment {
@@ -38,38 +37,51 @@
 }
 
 .user-photo__comment-wrapper {
+  position: relative;
   padding-left: 18px;
   padding-bottom: 19px;
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   .user-photo {
     width: 300px;
+    margin-bottom: 20px;
+  }
 
-    .user-photo__comment-panorama {
-      min-width: 620px;
-      // margin: 0 auto;
-    }
+  .user-photo__comment-panorama {
+    padding-bottom: 0;
   }
 
   .user-photo--panorama {
     width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .user-photo__name {
+    top: 57px;
+    right: 40px;
+    font-weight: bold;
   }
 
   .user-photo__comment-wrapper {
+
     padding-left: 27px;
+    padding-bottom: 14px;
+  }
+
+  .user-photo__comment {
+    padding-bottom: 9px;
+    position: relative;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .user-photo {
-    .user-photo__comment-panorama {
-      min-width: 940px;
-    }
-  }
-
   .user-photo--panorama {
     width: 100%;
+  }
+
+  .user-photo__item {
+    outline: 2px solid red;
   }
 }

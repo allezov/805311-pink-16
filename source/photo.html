@@ -9,76 +9,85 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav main-nav--opened">
-      <div class="logo-wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="" height="" alt="Pink">
-        </a>
-      </div>
-      <button class="main-nav__toggle" type="button"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <div class="content__wrapper">
+    <header class="page-header">
+      <nav class="main-nav main-nav--opened">
+        <div class="logo-wrapper">
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" t alt="Логотип Pink»">
+            </picture>
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="page-header__photo photo">
       <div class="photo__wrapper-image">
         <h1 class="page-header__title">Фотографии пользователей</h1>
       </div>
     </div>
+  </div>
 
   <main class="page-main">
     <section class="photo-gallery">
       <div class="photo-gallery__agitation agitation">
-        <p class="agitation__text">Взгяните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?
+        <p class="agitation__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+          ваших?
         </p>
       </div>
       <div class=" user-photo user-photo--panorama">
         <div class="user-photo__item">
           <div class="user-photo__picture">
-              <picture>
-                  <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-                    <img class="page-main__logo-image--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
-                </picture>
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <img class="page-main__logo-image--panorama" src="img/panorama-mobile@1x.jpg" width="1200" height="505"
+                alt="Панорама дня">
+
+            </picture>
             <p class="user-photo__name">Панорама дня</p>
           </div>
-          <div class="user-photo__comment user-photo__comment-panorama">
+          <div class="user-photo__comment user-photo__comment-panorama content__center ">
             <div class="user-photo__comment-wrapper">
               <p class="comment__user-name">Анна <span class="comment__time">(5 минут назад)</span></p>
-              <p class="comment__user-message">Прыгать или нет? напишите в коментарии свой совет и смотрите прямую
+              <p class="comment__user-message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
                 трансляцию в
                 перископе, задавайте свои вопросы!</p>
-              <span class="comment__user-likes"></span>
-              <span class="comment__user-likes-sum">Нравится: 215</span>
+              <span class="comment__user-likes--panorama"></span>
+              <span class="comment__user-likes-sum comment__user-likes-sum--panorama">Нравится: 215</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper content__center">
         <div class="user-photo">
           <div class="user-photo__item">
             <div class="user-photo__picture">
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                      <img class="page-main__logo-image" src="img/photo-car-mobile@1x.jpg" width="" height=""
-                      alt="Панорама дня">
-                  </picture>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                <img class="page-main__logo-image" src="img/photo-car-mobile@1x.jpg" width="" height=""
+                  alt="Панорама дня">
+              </picture>
             </div>
             <div class="user-photo__comment comment">
               <div class="user-photo__comment-wrapper">
@@ -93,12 +102,12 @@
         <div class="user-photo">
           <div class="user-photo__item">
             <div class="user-photo__picture">
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                      <img class="page-main__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="" height=""
-                      alt="Панорама дня">
-                  </picture>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                <img class="page-main__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="" height=""
+                  alt="Панорама дня">
+              </picture>
             </div>
             <div class="user-photo__comment comment">
               <div class="user-photo__comment-wrapper">
@@ -113,12 +122,12 @@
         <div class="user-photo">
           <div class="user-photo__item">
             <div class="user-photo__picture">
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                      <img class="page-main__logo-image" src="img/photo-window-mobile@1x.jpg" width="" height=""
-                      alt="Панорама дня">
-                  </picture>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                <img class="page-main__logo-image" src="img/photo-window-mobile@1x.jpg" width="" height=""
+                  alt="Панорама дня">
+              </picture>
             </div>
             <div class="user-photo__comment comment">
               <div class="user-photo__comment-wrapper">
@@ -133,12 +142,12 @@
         <div class="user-photo">
           <div class="user-photo__item">
             <div class="user-photo__picture">
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                      <img class="page-main__logo-image" src="img/photo-fair-mobile@1x.jpg" width="" height=""
-                      alt="Панорама дня">
-                  </picture>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                <img class="page-main__logo-image" src="img/photo-fair-mobile@1x.jpg" width="" height=""
+                  alt="Панорама дня">
+              </picture>
             </div>
             <div class="user-photo__comment comment">
               <div class="user-photo__comment-wrapper">
@@ -153,12 +162,12 @@
         <div class="user-photo">
           <div class="user-photo__item">
             <div class="user-photo__picture">
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                      <img class="page-main__logo-image" src="img/photo-pov-mobile@1x.jpg" width="" height=""
-                      alt="Панорама дня">
-                    </picture>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                <img class="page-main__logo-image" src="img/photo-pov-mobile@1x.jpg" width="" height=""
+                  alt="Панорама дня">
+              </picture>
             </div>
             <div class="user-photo__comment comment">
               <div class="user-photo__comment-wrapper">
@@ -173,12 +182,12 @@
         <div class="user-photo">
           <div class="user-photo__item">
             <div class="user-photo__picture">
-                <picture>
-                    <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                      <img class="page-main__logo-image" src="img/photo-wing-mobile@1x.jpg" width="" height=""
-                      alt="Панорама дня">
-                    </picture>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                <img class="page-main__logo-image" src="img/photo-wing-mobile@1x.jpg" width="" height=""
+                  alt="Панорама дня">
+              </picture>
             </div>
             <div class="user-photo__comment comment">
               <div class="user-photo__comment-wrapper">

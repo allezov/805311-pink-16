@@ -33,11 +33,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1d2632;
+  background: #0f1419;
   opacity: 0.3;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   .page-header__logo {
     padding: 44px 93px;
   }
@@ -46,9 +46,25 @@
     font-size: 50px;
     line-height: 60px;
     padding-top: 69px;
+    max-width: 620px;
+  }
+
+  .page-header__photo {
+    margin-top: 366px;
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    padding: 27px 76px;
+  }
 
-// }
+  .page-header__photo {
+    margin: 0;
+  }
+
+  .page-header__title {
+    padding-top: 63px;
+    padding-left: 151px;
+  }
+}
