@@ -3,11 +3,11 @@
   line-height: 24px;
 
   &__user-name {
-    font-weight: bold;
-    margin: 0;
-    padding-top: 17px;
     font-size: 14px;
     line-height: 24px;
+    font-weight: bold;
+    margin: 0;
+    // padding-top: 17px;
   }
 
   &__time {
@@ -47,11 +47,12 @@
 }
 
 .comment__user-likes-sum {
-  padding-left: 31px;
+
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
+  padding-left: 31px;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,7 +72,7 @@
   }
 
   .comment__user-name {
-    padding-top: 23px;
+    padding-top: 5px;
   }
 
   .comment__user-likes-sum--panorama {
@@ -87,7 +88,12 @@
 
 @media (min-width: @desktop-width) {
   .comment__user-likes--panorama::after {
-    top: 31px;
-    left: 901px;
+    top: 30px;
+    left: 896px;
   }
+}
+
+.comment__user-likes-sum--panorama {
+  top: 25px;
+  right: 62px;
 }

@@ -6,30 +6,29 @@
   }
 }
 
+.page-main__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .page-main__form {
   width: 15px;
   height: 15px;
   background: red;
-  margin-top: 567px;
 }
 
 @media (min-width: 660px) {
-  .page-main {
-    // max-width: 660px;
-    // margin: 0 auto;
-  }
-
   .page-main__wrapper {
+    max-width: 620px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
-// @media (min-width: @desktop-width) {
-
-//   .page-main__wrapper {
-//     background: blue;
-
-//   }
-// }
+@media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    max-width: 940px;
+    padding: 0;
+  }
+}

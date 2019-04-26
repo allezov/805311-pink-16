@@ -11,34 +11,36 @@
 <body>
   <div class="content__wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
-        <div class="logo-wrapper">
-          <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" t alt="Логотип Pink»">
-            </picture>
-          </a>
-        </div>
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="wrapper">
+        <nav class="main-nav main-nav--opened">
+          <div class="logo-wrapper">
+            <a class="page-header__logo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" t alt="Логотип Pink»">
+              </picture>
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <div class="page-header__photo photo">
       <div class="photo__wrapper-image">
@@ -50,7 +52,7 @@
   <main class="page-main">
     <section class="photo-gallery">
       <div class="photo-gallery__agitation agitation">
-        <p class="agitation__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+        <p class="agitation__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает
           ваших?
         </p>
       </div>
@@ -60,13 +62,11 @@
             <picture>
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-              <img class="page-main__logo-image--panorama" src="img/panorama-mobile@1x.jpg" width="1200" height="505"
-                alt="Панорама дня">
-
+              <img class="page-main__logo-image--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
             </picture>
             <p class="user-photo__name">Панорама дня</p>
           </div>
-          <div class="user-photo__comment user-photo__comment-panorama content__center ">
+          <div class="user-photo__comment user-photo__comment-panorama">
             <div class="user-photo__comment-wrapper">
               <p class="comment__user-name">Анна <span class="comment__time">(5 минут назад)</span></p>
               <p class="comment__user-message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
@@ -78,137 +78,140 @@
           </div>
         </div>
       </div>
-      <div class="page-main__wrapper content__center">
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img class="page-main__logo-image" src="img/photo-car-mobile@1x.jpg" width="" height=""
-                  alt="Панорама дня">
-              </picture>
+      <div class="wrapper">
+        <div class="page-main__wrapper">
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-car-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Левон <span class="comment__time">(5 часов назад)</span></p>
+                  <p class="comment__user-message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 356</span>
+                </div>
+              </div>
             </div>
-            <div class="user-photo__comment comment">
-              <div class="user-photo__comment-wrapper">
-                <p class="comment__user-name">Левон <span class="comment__time">(5 часов назад)</span></p>
-                <p class="comment__user-message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="comment__user-likes"></span>
-                <span class="comment__user-likes-sum">Нравится: 356</span>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Антон <span class="comment__time">(12 часов назад)</span></p>
+                  <p class="comment__user-message">Соседи будут рады!</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 666</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-window-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Борис <span class="comment__time">(20 часов назад)</span></p>
+                  <p class="comment__user-message"> Здесь могла быть ваша цитата о высоком и вечном</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 215</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-fair-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Сергей <span class="comment__time">(25 часов назад)</span></p>
+                  <p class="comment__user-message">Самая кубанская в мире!</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-pov-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Максим <span class="comment__time">(40 часов назад)</span></p>
+                  <p class="comment__user-message">Где снег-то?</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-wing-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Надежда <span class="comment__time">(45 часов назад)</span></p>
+                  <p class="comment__user-message">Всем GM и взаимные лайки!</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 2560</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img class="page-main__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="" height=""
-                  alt="Панорама дня">
-              </picture>
-            </div>
-            <div class="user-photo__comment comment">
-              <div class="user-photo__comment-wrapper">
-                <p class="comment__user-name">Антон <span class="comment__time">(12 часов назад)</span></p>
-                <p class="comment__user-message">Соседи будут рады!</p>
-                <span class="comment__user-likes"></span>
-                <span class="comment__user-likes-sum">Нравится: 666</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img class="page-main__logo-image" src="img/photo-window-mobile@1x.jpg" width="" height=""
-                  alt="Панорама дня">
-              </picture>
-            </div>
-            <div class="user-photo__comment comment">
-              <div class="user-photo__comment-wrapper">
-                <p class="comment__user-name">Борис <span class="comment__time">(20 часов назад)</span></p>
-                <p class="comment__user-message"> Здесь могла быть ваша цитата о высоком и вечном</p>
-                <span class="comment__user-likes"></span>
-                <span class="comment__user-likes-sum">Нравится: 215</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img class="page-main__logo-image" src="img/photo-fair-mobile@1x.jpg" width="" height=""
-                  alt="Панорама дня">
-              </picture>
-            </div>
-            <div class="user-photo__comment comment">
-              <div class="user-photo__comment-wrapper">
-                <p class="comment__user-name">Сергей <span class="comment__time">(25 часов назад)</span></p>
-                <p class="comment__user-message">Самая кубанская в мире!</p>
-                <span class="comment__user-likes"></span>
-                <span class="comment__user-likes-sum">Нравится: 4</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img class="page-main__logo-image" src="img/photo-pov-mobile@1x.jpg" width="" height=""
-                  alt="Панорама дня">
-              </picture>
-            </div>
-            <div class="user-photo__comment comment">
-              <div class="user-photo__comment-wrapper">
-                <p class="comment__user-name">Максим <span class="comment__time">(40 часов назад)</span></p>
-                <p class="comment__user-message">Где снег-то?</p>
-                <span class="comment__user-likes"></span>
-                <span class="comment__user-likes-sum">Нравится: 150</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                <img class="page-main__logo-image" src="img/photo-wing-mobile@1x.jpg" width="" height=""
-                  alt="Панорама дня">
-              </picture>
-            </div>
-            <div class="user-photo__comment comment">
-              <div class="user-photo__comment-wrapper">
-                <p class="comment__user-name">Надежда <span class="comment__time">(45 часов назад)</span></p>
-                <p class="comment__user-message">Всем GM и взаимные лайки!</p>
-                <span class="comment__user-likes"></span>
-                <span class="comment__user-likes-sum">Нравится: 2560</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-image ">
-          <img src="../img/logo-pink-blue-mobile.svg">
-        </a>
+          <picture>
+              <source media="(min-width: 960px)" srcset="./img/logo-pink-blue-desktop.svg">
+              <source media="(min-width: 660px)" srcset="./img/logotype-blue-tablet.svg">
+              <img src="./img/logo-pink-blue-mobile.svg" alt="Логотип Pink»">
+            </picture>
       </div>
       <div class="page-footer__social-links social-links">
         <a class="social-links__item social-links__item--tw" href="https://twitter.com/"></a>
