@@ -1,29 +1,39 @@
 .opportunity {
+  margin-bottom: 32px;
+
   &__item-head {
+    text-align: center;
     margin: 0;
-    padding-bottom: 22px;
+    margin-bottom: 11px;
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
-    text-align: center;
+    font-weight: 700;
     color: #283645;
   }
 
   &__item-body {
     margin: 0;
-    padding-bottom: 40px;
     text-align: center;
+    letter-spacing: 0;
     color: #283645;
   }
+}
 
-  .opportunity__link {
-    color: pink;
-  }
+.opportunity__item-head--gap {
+  display: none;
 }
 
 @media (min-width: 660px) {
   .opportunity {
-    width: 300px;
+
+    margin-bottom: 34px;
+    padding-left: 10px;
+  }
+
+  .opportunity--time {
+    width: 310px;
+    outline: 2px solid tomato;
+    text-align: left;
   }
 
   .opportunity__item-body {
@@ -32,11 +42,74 @@
 
   .opportunity__item-head {
     text-align: left;
+    margin-bottom: 12px;
+  }
+
+  .opportunity__item-head--time {
+    padding-top: 37px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .opportunity__link {
+    color: pink;
+    margin-top: 7px;
+    display: block;
   }
 }
 
-@media (min-width: 1200px) {
-  .opportunity--qwerty {
-    width: 570px;
+@media (min-width: @desktop-width) {
+  .opportunity {
+    width: 300px;
+    padding: 0;
+    outline: 2px solid tomato;
+
+    &__item-head-time {
+      text-align: left;
+    }
+  }
+
+  .opportunity--time {
+    width: 580px;
+  }
+
+  .opportunity__item-head {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+
+  .opportunity__item-head--time {
+    text-align: left;
+    padding-top: 87px;
+  }
+
+  .opportunity__item-head--gap {
+    display: block;
+  }
+
+  .opportunity__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: #d22856;
+    margin-top: 31px;
+  }
+
+  .opportunity__item-body {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .opportunity__item-body--time {
+    text-align: left;
+    margin: 0;
+    width: auto;
   }
 }
