@@ -1,13 +1,12 @@
 .comment {
   color: #283645;
   line-height: 24px;
+  padding-top: 25px;
+  min-height: 155px;
 
   &__user-name {
-    font-size: 14px;
-    line-height: 24px;
     font-weight: bold;
     margin: 0;
-    // padding-top: 17px;
   }
 
   &__time {
@@ -15,85 +14,4 @@
     font-size: 12px;
     font-weight: 300;
   }
-}
-
-.comment__user-message {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.comment__user-likes--panorama::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 22px;
-  height: 19px;
-  bottom: 18px;
-  left: 18px;
-  background: url("../img/icon-heart.svg") no-repeat;
-  background-size: 13px;
-}
-
-.comment__user-likes::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 13px;
-  height: 13px;
-  bottom: 23px;
-  left: 18px;
-  background: url("../img/icon-heart.svg") no-repeat;
-  background-size: 13px;
-}
-
-.comment__user-likes-sum {
-
-  font-size: 12px;
-  line-height: 24px;
-  color: #d22856;
-  text-transform: uppercase;
-  padding-left: 31px;
-}
-
-@media (min-width: @tablet-width) {
-  .comment__user-message {
-    min-height: 48px;
-    margin-bottom: 11px;
-  }
-
-  .comment__user-likes--panorama::after {
-    top: 28px;
-    left: 578px;
-  }
-
-  .comment__user-likes::after {
-    bottom: 20px;
-    left: 255px;
-  }
-
-  .comment__user-name {
-    padding-top: 5px;
-  }
-
-  .comment__user-likes-sum--panorama {
-    position: absolute;
-    top: 25px;
-    right: 59px;
-  }
-
-  .comment__user-likes-sum {
-    padding: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .comment__user-likes--panorama::after {
-    top: 30px;
-    left: 896px;
-  }
-}
-
-.comment__user-likes-sum--panorama {
-  top: 25px;
-  right: 62px;
 }
