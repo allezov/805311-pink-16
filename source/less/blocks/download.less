@@ -1,6 +1,7 @@
 .download {
   color: #ffffff;
-  background-color: #1d2631;
+  margin-top: 326px;
+  padding-bottom: 33px;
 
   &__button {
     font-size: 18px;
@@ -9,65 +10,155 @@
 
   &__availability {
     line-height: 24px;
-    padding-bottom: 34px;
     margin: 0;
+    text-align: center;
+  }
+
+  &__column {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 27px;
   }
 
   &__link {
-    padding-bottom: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 15px;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    margin-bottom: 22px;
   }
 
   &__logo {
-    padding-bottom: 28px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+
+  .download__item--apple {
+    background: url("../img/logo-apple.svg") no-repeat 50%;
+  }
+
+  .download__item--android {
+    background: url("../img/logo-android.svg") no-repeat 50%;
+    padding-top: 7px;
+  }
+
+  .download__item--windows {
+    background: url("../img/logo-microsoft.svg") no-repeat 50%;
+    padding-top: 7px;
   }
 
   &__agitation {
     margin: 0;
+    display: none;
   }
-
-  &__wrapper::before {
-    content: "";
-    display: block;
-    height: 463px;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat 50% bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  }
-
-  // &__image {
-
-  //   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-
-  // }
-
-  // &__image-2 {
-  //   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-  //   height: 290px;
-  // }
 }
 
-@media (min-width: 660px) {
+.download__wrapper::before {
+  content: "";
+  display: block;
+  height: 395px;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 bottom;
+  //  url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;;
+  background-size: auto, cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/iphone-hand-mobile@2x.png") no-repeat 0 bottom;
+    background-size: 280px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .download {
-    min-height: 620px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 618px;
+
+    padding-bottom: 0;
+    margin-top: 366px;
+
+    background: transparent;
   }
 
   .download__wrapper {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 20px;
-    padding-top: 100px;
-    height: 620px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 0 100%;
-    box-sizing: border-box;
+    padding-top: 94px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 100%;
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   .download__column {
+    min-height: 523px;
     width: 300px;
+    margin: 0;
+    outline: 2px solid teal;
+  }
+
+  .download__agitation {
+    display: block;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 300;
+  }
+
+  .download__link {
+    margin-top: 33px;
+    margin-bottom: 32px;
+  }
+
+  .download__logo {
+    margin-bottom: 20px;
+  }
+
+  .download__availability {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    outline: 2px solid teal;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .download {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    margin: 0;
+  }
+
+  .download__wrapper {
+    padding-top: 220px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -15% 100%;
+  }
+
+  .download__column {
+    margin: 0;
+    min-height: 633px;
+    outline: 2px solid green;
+  }
+
+  .download__agitation {
+    display: block;
+    font-size: 50px;
+    line-height: 59px;
+    font-weight: 300;
+  }
+
+  .download__link {
+    margin-top: 55px;
+    margin-bottom: 56px;
+    letter-spacing: 2px;
+  }
+
+  .download__logo {
+    margin-bottom: 35px;
   }
 }

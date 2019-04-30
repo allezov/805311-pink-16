@@ -9,96 +9,117 @@
 </head>
 
 <body>
-  <header class="page-header">
-
-
-    <nav class="main-nav">
-      <div class="logo-wrapper">
-        <a class="logo page-header__logo">
-          <img class="" src="http://placehold.it/100x50" width="" height="" alt="Панорама дня">
-        </a>
+  <div class="content">
+    <header class="page-header">
+      <div class="wrapper">
+        <nav class="main-nav main-nav--opened">
+          <div class="logo-wrapper">
+            <a class="logo page-header__logo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink»">
+              </picture>
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button"></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    </header>
     <section class="download">
-      <h2 class="visually-hidden">Загрузка приложения</h2>
-      <div class="download__wrapper">
-        <div class="download__column">
-          <p class="download__agitation">Взгляните на жизнь иначе</p>
-          <div class="download__link">
-            <a class="download__button" href="#">Скачать приложение</a>
-          </div>
-          <div class="download__logo">
-            <span class="download__item">Ios</span>
-            <span class="download__item">Android</span>
-            <span class="download__item">Windows</span>
-          </div>
-          <div class="download__platform">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Загрузка приложения</h2>
+        <div class="download__wrapper">
+          <div class="download__column">
+            <p class="download__agitation">Взгляните<br>на жизнь иначе!</p>
+            <div class="download__link">
+              <a class="download__button" href="#">Скачать приложение</a>
+            </div>
+            <div class="download__logo">
+              <span class="download__item download__item--apple"></span>
+              <span class="download__item download__item--android">
+              </span>
+              <span class="download__item download__item--windows"></span>
+            </div>
             <p class="download__availability">Доступно для Iphone, iPad,Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </div>
     </section>
-  </header>
+  </div>
+
   <main class="page-main">
     <section class="offer">
       <h1 class="visually-hidden">Приложение Pink</h1>
-      <header class="offer__header">
+      <header class="offer__header content__center">
         <h2 class="visually-hidden">Предложения</h2>
         <p class="offer__question">Устали от серости мегаполиса?</p>
-        <p class="offer__slogan">Нам есть, что вам<br>предложить!</p>
+        <p class="offer__slogan">Нам есть, что вам<br><br class="offer__slogan-gap">предложить!</p>
       </header>
-      <div class="offer__opportunity">
-        <div class="offer__opportunity-wrapper">
-          <div class="offer__image">
-            <img src="img/iphone-screen-mobile@1x.png" alt="Screenshot приложения">
-          </div>
-          <div class="offer__item">
-            <div class="opportunity offer__item-image-1 ">
-              <h3 class="opportunity__item-head">Поднимает настроение</h3>
-              <p class="opportunity__item-body">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-                несколько кликов!</p>
+      <div class="offer__wrapper">
+        <div class="wrapper">
+          <div class="offer__opportunity ">
+            <div class="offer__item">
+              <div class="opportunity offer__item-image-1 ">
+                <h3 class="opportunity__item-head">Поднимает настроение</h3>
+                <p class="opportunity__item-body">Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально
+                  в
+                  несколько кликов!</p>
+              </div>
+              <div class="opportunity offer__item-image-2 ">
+                <h3 class="opportunity__item-head">Меняет мир <br class="opportunity__item-head--gap">вокруг</h3>
+                <p class="opportunity__item-body">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                  чтобы
+                  усилить эффект</p>
+              </div>
+              <div class="opportunity offer__item-image-3">
+                <h3 class="opportunity__item-head">Заводит <br class="opportunity__item-head--gap">новых друзей</h3>
+                <p class="opportunity__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                  заводите
+                  новых</p>
+              </div>
             </div>
-            <div class="opportunity offer__item-image-2 ">
-              <h3 class="opportunity__item-head">Меняет мир вокруг</h3>
-              <p class="opportunity__item-body">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                усилить эффект</p>
-            </div>
-            <div class="opportunity offer__item-image-3">
-              <h3 class="opportunity__item-head">Заводит новых друзей</h3>
-              <p class="opportunity__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите
-                новых</p>
+            <div class="offer__image">
             </div>
           </div>
         </div>
       </div>
-      <div class="offer__opportunity offer__opportunity--qwerty">
-        <div class="offer__opportunity-wrapper">
-          <div class="offer__opportunity-image">
-          </div>
-          <div class="opportunity opportunity--qwerty">
-            <h3 class="opportunity__item-head">Эффект на 24 часа!</h3>
-            <p class="opportunity__item-body">Британские ученые провели исследование и доказали,
+      <div class="wrapper">
+        <div class="offer__opportunity offer__opportunity--time">
+          <div class="opportunity opportunity--time">
+            <h3 class="opportunity__item-head opportunity__item-head--time">Эффект<br class="offer__opportunity-gap">
+              на
+              24 часа!</h3>
+            <p class="opportunity__item-body opportunity__item-body--time">Британские ученые провели исследование и
+              доказали,
               что положительный эффект от использования приложения длится целые сутки!
             </p>
             <a class="opportunity__link" href="#">Узнать больше об исследовании</a>
+          </div>
+          <div class="offer__opportunity-image">
+            <svg class="offer__opportunity-image-time" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px"
+              viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+              <path fill="#dedede"
+                d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+            </svg>
           </div>
         </div>
       </div>
