@@ -74,6 +74,7 @@
 
   .offer__header {
     max-width: 600px;
+    margin-bottom: 0;
   }
 
   .offer__slogan-gap {
@@ -92,12 +93,30 @@
   }
 
   .offer__opportunity-image {
+    position: relative;
     width: 300px;
   }
 
   .offer__opportunity-image-time {
     width: 240px;
     height: 280px;
+  }
+
+  .offer__opportunity-image::after {
+    content: "24";
+    outline: 2px solid;
+    position: absolute;
+    top: 56px;
+    left: 18px;
+    text-align: center;
+    font-size: 98px;
+    font-weight: 700;
+    line-height: 198px;
+    color: #d22856;
+    background: url("../img/icon-editor-diagram-fill.svg") no-repeat;
+    background-size: cover;
+    width: 203px;
+    height: 203px;
   }
 
   .offer__opportunity--time {
@@ -125,14 +144,24 @@
   .offer__header {
     background-color: #ffffff;
     max-width: 750px;
+    margin-bottom: 89px;
   }
 
   .offer__opportunity {
-    margin-bottom: 28px;
+    margin: 0;
   }
 
   .offer__opportunity-image {
     width: 370px;
+  }
+
+  .offer__opportunity-image::after {
+    top: 72px;
+    left: 24px;
+    font-size: 119px;
+    line-height: 238px;
+    width: 253px;
+    height: 253px;
   }
 
   .offer__question {
@@ -217,5 +246,10 @@
 
   .offer__image {
     display: none;
+  }
+
+  .offer__wrapper--time {
+    padding-top: 28px;
+    background: #f2f2f2;
   }
 }

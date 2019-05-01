@@ -93,7 +93,8 @@
 
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/iphone-hand-tablet@2x.png");
+      background: url("../img/iphone-hand-tablet@2x.png") no-repeat 50% 100%;
+      background-size: 113%;
     }
   }
 
@@ -137,6 +138,11 @@
   .download__wrapper {
     padding-top: 220px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat -15% 100%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/iphone-hand-desktop@2x.png") no-repeat -15% 100%;
+      background-size: 113%;
+    }
   }
 
   .download__column {
