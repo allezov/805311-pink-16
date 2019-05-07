@@ -1,48 +1,117 @@
-// задал временные цвета для наглядности расположения пока не размеченых элементов
 .page-footer {
-  padding-top: 40px;
-  max-width: 320px;
-  margin: 0 auto;
+  padding-top: 48px;
 
   &__logo {
-    background: green;
     width: 150px;
-    height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   &__social-links {
     width: 150px;
-    height: 40px;
-    background: pink;
-    margin-bottom: 43px;
+    height: 55px;
+    margin-bottom: 40px;
   }
 
   &__develop {
-    width: 150px;
-    height: 40px;
-    background-color: blue;
+    width: 154px;
   }
 
-  &__develop-link {
-    color: #283645;
-    line-height: 18px;
+  &--index {
+    display: none;
   }
 }
 
-@media (min-width: 660px) {
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__develop-link {
+  position: relative;
+  display: block;
+  color: #283645;
+  line-height: 18px;
+  margin-left: 11px;
+
+  // background: url("../img/htmlacademy2.svg") no-repeat 74% 16px;
+}
+
+// .page-footer__develop-link::after{
+//   content: "";
+//   display: block;
+// }
+
+.page-footer__develop-link-icon {
+  /* position: absolute; */
+  /* outline: 2px solid black; */
+  width: 28px;
+  /* height: 5px; */
+  /* top: 3px; */
+  margin-left: 11px;
+  vertical-align: middle;
+}
+
+@media (min-width: @tablet-width) {
   .page-footer {
-    max-width: 620px;
+    padding: 0;
+
+    &--index {
+      display: block;
+    }
   }
 
   .page-footer__wrapper {
+    min-height: 116px;
+    max-width: 620px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__social-links {
+    width: 150px;
+    height: 55px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .page-footer__develop {
+    padding: 0;
+    text-align: right;
+  }
+
+  .page-footer__develop-link {
+    position: relative;
+    padding: 16px 0 0 20px;
+    margin: 0;
+    display: block;
+  }
+
+  .page-footer__develop-link-icon {
+    width: 27px;
+    vertical-align: middle;
+    margin-left: 8px;
   }
 }
 
-@media (min-width: 1200px) {
-  .page-footer {
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
     max-width: 940px;
+    min-height: 110px;
+  }
+
+  .page-footer__develop {
+    padding-top: 21px;
+  }
+
+  .page-footer__develop-link {
+    padding: 0;
+    font-size: 18px;
   }
 }

@@ -1,10 +1,42 @@
 .agitation {
-  padding: 50px 40px;
+  padding-top: 45px;
+  padding-bottom: 49px;
+}
 
-  &__text {
-    color: #283645;
-    text-align: center;
+.agitation__text {
+  color: #283645;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .agitation {
+    padding-top: 92px;
+    padding-bottom: 76px;
+  }
+
+  .agitation__text {
+    font-size: 18px;
     line-height: 30px;
-    margin: 0;
+    max-width: 440px;
+  }
+
+  .agitation__text br {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .agitation {
+    padding-top: 92px;
+    padding-bottom: 89px;
+  }
+
+  .agitation__text {
+    max-width: 575px;
   }
 }

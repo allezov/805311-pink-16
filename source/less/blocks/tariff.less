@@ -1,0 +1,333 @@
+.tariff__table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-left: -257px;
+}
+
+.tariff__table th {
+  border-bottom: none;
+  border-top: none;
+  box-sizing: border-box;
+  min-width: 277px;
+}
+
+.tariff__table-sell-hide {
+  display: none;
+}
+
+// .tariff__table tr {
+//   outline: 1px solid red;
+// }
+
+// .tariff__table td {
+//   outline: 1px solid green;
+// }
+.tariff__table td {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  background: #ffffff;
+  box-sizing: border-box;
+  min-width: 277px;
+}
+
+.tariff__table-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  background: #283645;
+  border: 2px solid #e5e5e5;
+}
+
+.tariff__wrapper {
+  background: #f2f2f2;
+  padding-top: 92px;
+  padding-bottom: 99px;
+}
+
+.tariff__table p {
+  margin: 0;
+}
+
+.tariff__table-head {
+  height: 98px;
+}
+
+.tariff__cost {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.tariff__table-access {
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-bottom: 14px;
+  border: none;
+  position: relative;
+}
+
+// .tariff__table-access--no{
+//   position: absolute;
+// }
+
+.tariff__table-item-pink td {
+  border-top: none;
+}
+
+.tariff__table-access--yes {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 14px;
+  right: 14px;
+}
+
+.tariff__table-access--yes::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 15px;
+  height: 3px;
+  background-color: #3dc644;
+  transform: rotate(45deg);
+}
+
+.tariff__table-access--yes::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  height: 3px;
+  width: 29px;
+  background-color: #3dc644;
+  transform: rotate(-44deg);
+}
+
+.tariff__table-access--no {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 14px;
+  right: 14px;
+}
+
+.tariff__table-access--no::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 36px;
+  height: 3px;
+  background-color: #f25b26;
+  transform: rotate(44deg);
+}
+
+.tariff__table-access--no::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 36px;
+  height: 3px;
+  background-color: #f25b26;
+  transform: rotate(-44deg);
+}
+
+.tariff__table-title-hit {
+  position: relative;
+}
+
+.tariff__table-title-hit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 76px;
+  height: 76px;
+  background: url("../img/bg-hit.svg") no-repeat;
+}
+
+.tariff__table-title-hit::after {
+  content: "ХИТ";
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.tariff__slider {
+  position: relative;
+}
+
+.tariff__slider-controls .tariff__slider-controls-item-1::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 132px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  background: #283645;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+.tariff__slider-controls .tariff__slider-controls-item-2::after {
+
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 154px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  border: 3px solid #283645;
+  border-radius: 50%;
+}
+
+.tariff__slider-controls .tariff__slider-controls-item-3::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 182px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  background: #283645;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .tariff__wrapper {
+    padding-top: 70px;
+    padding-bottom: 44px;
+  }
+
+  .tariff__table {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .tariff__table th {
+    // min-width: 197px;
+    min-width: 155px;
+  }
+
+  .tariff__table td {
+    min-width: 155px;
+    text-transform: initial;
+  }
+
+  .tariff__table-sell-hide {
+    display: table-cell;
+  }
+
+  .tariff__table-head {
+    height: 79px;
+  }
+
+  .tariff__table-access {
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+  }
+
+  .tariff__table-mobil {
+    display: none;
+  }
+
+  .tariff__table-access--yes {
+    top: 8px;
+    right: 58px;
+  }
+
+  .tariff__table-access--no {
+    top: 8px;
+    right: 58px;
+  }
+
+  .tariff__table-title {
+    font-size: 16px;
+  }
+
+  .tariff__cost {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .tariff__table-title-hit::before {
+    left: -1px;
+    background: url("../img/bg-hit-tablet.svg") no-repeat;
+  }
+
+  .tariff__table-title-hit::after {
+    top: 3px;
+    left: 7px;
+    font-size: 13px;
+  }
+
+  .tariff__slider {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff__table {
+    max-width: 940px;
+  }
+
+  .tariff__wrapper {
+    padding-top: 143px;
+    padding-bottom: 95px;
+  }
+
+  .tariff__table-head {
+    height: 98px;
+  }
+
+  .tariff__table td {
+    font-size: 18px;
+    box-sizing: content-box;
+  }
+
+  .tariff__table-access {
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-bottom: 16px;
+  }
+
+  .tariff__cost {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .tariff__table-access--yes {
+    top: 17px;
+    right: 98px;
+  }
+
+  .tariff__table-access--no {
+    top: 15px;
+    right: 99px;
+  }
+
+  .tariff__table-title-hit::before {
+    background: url("../img/bg-hit.svg") no-repeat;
+  }
+
+  .tariff__table-title-hit::after {
+    content: "ХИТ";
+    top: 11px;
+    left: 11px;
+  }
+}

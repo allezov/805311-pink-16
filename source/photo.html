@@ -9,166 +9,296 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <div class="logo-wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/100x50" width="" height="" alt="Pink">
-        </a>
-      </div>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="page-header__photo photo">
+  <div class="content">
+    <header class="page-header">
+      <nav class="main-nav main-nav--opened">
+        <div class="logo-wrapper">
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" t alt="Логотип Pink»">
+            </picture>
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="content__photo photo">
       <div class="photo__wrapper-image">
-        <h1 class="page-header__title">Фотографии пользователей</h1>
+        <h1 class="content__title">Фотографии<br>пользователей</h1>
       </div>
     </div>
+  </div>
 
-  </header>
   <main class="page-main">
     <section class="photo-gallery">
       <div class="photo-gallery__agitation agitation">
-        <p class="agitation__text">Взгяните на фотографии, которые выкладывают пользователи!<br>
-          Видите, как не хватает ваших?
+        <p class="agitation__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает
+          ваших?
         </p>
       </div>
       <div class=" user-photo user-photo--panorama">
         <div class="user-photo__item">
           <div class="user-photo__picture">
-
-            <img class="page-main__logo-image--panorama" src="img/panorama-mobile@1x.jpg" width="" height=""
-              alt="Панорама дня">
+            <picture class="pan">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+              <img class="page-main__image-panorama" src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@1x.jpg 1x img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
             <p class="user-photo__name">Панорама дня</p>
           </div>
           <div class="user-photo__comment user-photo__comment-panorama">
-            <p class="comment__user-name">Анна <span class="comment__time">(5 минут назад)</span></p>
-            <p class="comment__user-message">Прыгать или нет? напишите в коментарии свой совет и смотрите прямую
-              трансляцию в
-              перископе, задавайте свои вопросы!</p>
-            <span class="comment__user-likes"></span>
-            <span class="comment__user-likes-sum">Нравится: 215</span>
+            <div class="user-photo__comment-wrapper">
+              <p class="comment__user-name">Анна <span class="comment__time">(5 минут назад)</span></p>
+              <p class="comment__user-message">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+                трансляцию в
+                перископе, задавайте свои вопросы!</p>
+              <span class="comment__user-likes--panorama"></span>
+              <span class="comment__user-likes-sum comment__user-likes-sum--panorama">Нравится: 215</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="page-main__wrapper">
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <img class="page-main__logo-image" src="../img/photo-car-mobile@1x.jpg" width="" height=""
-                alt="Панорама дня">
+      <div class="wrapper">
+        <div class="page-main__wrapper">
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-car-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Левон <span class="comment__time">(5 часов назад)</span></p>
+                  <p class="comment__user-message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 356</span>
+                </div>
+              </div>
             </div>
-            <div class="user-photo__comment comment">
-              <p class="comment__user-name">Левон <span class="comment__time">(5 часов назад)</span></p>
-              <p class="comment__user-message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <span class="user-likes"></span>
-              <span class="user-likes-sum">Нравится: 356</span>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-drumset-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Антон <span class="comment__time">(12 часов назад)</span></p>
+                  <p class="comment__user-message">Соседи будут рады!</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 666</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-window-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Борис <span class="comment__time">(20 часов назад)</span></p>
+                  <p class="comment__user-message"> Здесь могла быть ваша цитата о высоком и вечном</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 215</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-fair-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Сергей <span class="comment__time">(25 часов назад)</span></p>
+                  <p class="comment__user-message">Самая кубанская в мире!</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-pov-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Максим <span class="comment__time">(40 часов назад)</span></p>
+                  <p class="comment__user-message">Где снег-то?</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-photo">
+            <div class="user-photo__item">
+              <div class="user-photo__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                  <img class="page-main__logo-image" src="img/photo-wing-mobile@1x.jpg" width="" height=""
+                    alt="Панорама дня">
+                </picture>
+              </div>
+              <div class="user-photo__comment comment">
+                <div class="user-photo__comment-wrapper">
+                  <p class="comment__user-name">Надежда <span class="comment__time">(45 часов назад)</span></p>
+                  <p class="comment__user-message">Всем GM и взаимные лайки!</p>
+                  <span class="comment__user-likes"></span>
+                  <span class="comment__user-likes-sum">Нравится: 2560</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <img class="page-main__logo-image" src="../img/photo-drumset-mobile@1x.jpg" width="" height=""
-                alt="Панорама дня">
+      </div>
+    </section>
+    <section class="form-posting">
+      <p class="form-posting__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="form-posting__wrapper">
+        <form class="form-posting__form" method="post">
+          <div class="form-posting__photo">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="form-posting__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+                alt="Выбранная фотография для редактирования.">
+            </picture>
+          </div>
+          <div class="form-posting__post">
+            <div class="form-posting__list-wrapper">
+              <ul class="form-posting__list">
+                <li class="form-posting__item">
+                  <button class="form-posting__crop">
+                    <svg class="form-posting__item-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      width="48px" height="48px"
+                      viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z" />
+                      <path
+                        d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                    </svg>
+                  </button>
+                  <div class="form-posting__control">
+                    <div class="form-posting__control--crop"></div>
+                  </div>
+                </li>
+                <li class="form-posting__item">
+                  <button class="form-posting__fill">
+                    <svg class="form-posting__item-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+                      viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z" />
+                      <path
+                        d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                      <rect y="40" width="48" height="3" />
+                    </svg>
+                  </button>
+                  <div class="form-posting__control form-posting__control--fill"></div>
+                </li>
+                <li class="form-posting__item">
+                  <button class="form-posting__contrast">
+                    <svg class="form-posting__item-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+                      viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                      xml:space="preserve">
+                      <path fill="#231F20"
+                        d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                    </svg>
+                  </button>
+                  <div class="form-posting__control form-posting__control--contrast"></div>
+                </li>
+              </ul>
             </div>
-            <div class="user-photo__comment comment">
-              <p class="comment__user-name">Антон <span class="comment__time">(12 часов назад)</span></p>
-              <p class="comment__user-message">Соседи будут рады!</p>
-              <span class="user-likes"></span>
-              <span class="user-likes-sum">Нравится: 666</span>
+            <div class="form-posting__button-wrapper">
+              <button class="form-posting__button-post" type="submit">Запостить</button>
+              <button class="form-posting__button-cancel" type="reset">Отмена</button>
             </div>
           </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <img class="page-main__logo-image" src="../img/photo-window-mobile@1x.jpg" width="" height=""
-                alt="Панорама дня">
-            </div>
-            <div class="user-photo__comment comment">
-              <p class="comment__user-name">Борис <span class="comment__time">(20 часов назад)</span></p>
-              <p class="comment__user-message"> Здесь могла быть ваша цитата о высоком и вечном</p>
-              <span class="user-likes"></span>
-              <span class="user-likes-sum">Нравится: 215</span>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <img class="page-main__logo-image" src="../img/photo-fair-mobile@1x.jpg" width="" height=""
-                alt="Панорама дня">
-            </div>
-            <div class="user-photo__comment comment">
-              <p class="comment__user-name">Сергей <span class="comment__time">(25 часов назад)</span></p>
-              <p class="comment__user-message">Самая кубанская в мире!</p>
-              <span class="user-likes"></span>
-              <span class="user-likes-sum">Нравится: 4</span>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <img class="page-main__logo-image" src="../img/photo-pov-mobile@1x.jpg" width="" height=""
-                alt="Панорама дня">
-            </div>
-            <div class="user-photo__comment comment">
-              <p class="comment__user-name">Максим <span class="comment__time">(40 часов назад)</span></p>
-              <p class="comment__user-message">Где снег-то?</p>
-              <span class="user-likes"></span>
-              <span class="user-likes-sum">Нравится: 150</span>
-            </div>
-          </div>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__item">
-            <div class="user-photo__picture">
-              <img class="page-main__logo-image" src="../img/photo-wing-mobile@1x.jpg" width="" height=""
-                alt="Панорама дня">
-            </div>
-            <div class="user-photo__comment comment">
-              <p class="comment__user-name">Надежда <span class="comment__time">(45 часов назад)</span></p>
-              <p class="comment__user-message">Всем GM и взаимные лайки!</p>
-              <span class="user-likes"></span>
-              <span class="user-likes-sum">Нравится: 2560</span>
-            </div>
-          </div>
-        </div>
-
+        </form>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-image "></a>
+        <picture>
+          <source media="(min-width: 960px)" srcset="./img/logo-pink-blue-desktop.svg">
+          <img src="./img/logo-pink-blue-mobile.svg" alt="Логотип Pink»">
+        </picture>
       </div>
       <div class="page-footer__social-links social-links">
-        <a class="social-links__item social-links__item--tw" href="#">Тв</a>
-        <a class="social-links__item social-links__item--fb" href="#">Фэйс</a>
-        <a class="social-links__item social-links__item--video" href="#">Видео</a>
+        <a class="social-links__item social-links__item--tw" href="https://twitter.com/"></a>
+        <a class="social-links__item social-links__item--fb" href="https://www.facebook.com/"></a>
+        <a class="social-links__item social-links__item--video" href="https://www.youtube.com/"></a>
       </div>
       <div class="page-footer__develop">
-        <a class="page-footer__develop-link" href="#">Разработано</a>
+        <a class="page-footer__develop-link" href="https://htmlacademy.ru/">
+          Разработано
+          <svg class="page-footer__develop-link-icon" xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 50 60" version="1.1" id="svg4"
+            sodipodi:docname="htmlacademy.svg" width="100%" height="100%">
+            <path
+              d="M 25.253807,0.7898051 H 25.000001 L 0,3.2457634 V 45.581805 L 25.000001,59.265 50,45.581805 V 3.2457634 Z M 46.827412,43.827548 25.000001,55.756489 3.1725892,43.827548 V 26.518891 l 21.7005098,11.92894 v 2.105104 L 10.025381,32.366411 v 2.105106 l 14.97462,8.303477 v 2.222058 l -14.97462,-8.186526 v 2.105106 l 14.97462,8.18653 15.101523,-8.303482 v -8.888227 l 6.725888,-3.742415 z m -0.126905,-19.881566 -5.964466,3.27461 -2.791877,1.520357 -13.071065,-7.133974 v 2.105108 l 11.167512,6.19837 h -0.126905 l -0.253807,0.11695 -1.649746,0.818652 -9.26396,-5.028867 v 2.105109 l 7.360406,3.97631 -1.776648,1.052554 -5.456852,-3.040708 v 2.105105 L 28.5533,34.003716 24.873099,35.991872 3.2994924,24.179882 24.873099,12.250943 Z M 46.827412,21.840876 24.873099,9.911936 3.1725892,21.840876 V 5.9356221 L 25.000001,3.8305154 46.827412,5.9356221 Z"
+              id="path2" style="fill:#2e368f;stroke-width:1.21825361" />
+          </svg>
+        </a>
       </div>
-    </div>
   </footer>
 </body>
 

@@ -1,22 +1,22 @@
 .photo {
   &__wrapper-image {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-color: #2b3b4b;
-    background-repeat: no-repeat;
-    height: 170px;
+    // background-image: url("../img/bg-back-mobile@1x.jpg");
+    // background-color: #2b3b4b;
+    // background-repeat: no-repeat;
+    min-height: 170px;
   }
 }
 
 @media (min-width: 660px) {
   .photo__wrapper-image {
-    height: 320px;
-    background: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 329px;
+    // background: url("../img/bg-back-tablet@1x.jpg");
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
   .photo__wrapper-image {
-    height: 390px;
-    background: url("../img/bg-back-desktop@1x.jpg");
+    min-height: 289px;
+    // background: url("../img/bg-back-desktop@1x.jpg");
   }
 }
