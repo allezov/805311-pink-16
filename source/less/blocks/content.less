@@ -1,17 +1,20 @@
 .content {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 23%;
-  background-color: #1d2631;
-  background-size: 322px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg");
-  }
+  background: #283645;
 }
 
 .content__photo {
-  margin-top: 326px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -67px;
+  background-color: #1d2631;
+  background-size: 322px;
+
+  @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 0 -70px;
+    background-size: 322px;
+    background-color: #1d2631;
+  }
 }
 
 .content__title {
@@ -27,17 +30,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .content {
+  .content__photo {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 28%;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 98%;
-      background-size: 1200px;
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 27%;
+      background-size: 1195px;
     }
-  }
-
-  .content__photo {
-    margin-top: 366px;
   }
 
   .content__title {
@@ -50,9 +50,10 @@
 
 @media (min-width: @desktop-width) {
   .content {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 45% 0%;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0%;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
       background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50%;
       background-size: 3000px;
     }
@@ -60,6 +61,7 @@
 
   .content__photo {
     margin: 0;
+    background: transparent;
   }
 
   .content__title {

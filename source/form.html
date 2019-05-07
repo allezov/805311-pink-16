@@ -48,7 +48,98 @@
   </div>
   <main class="page-main">
     <section class="page-main__form">
+      <div class="page-main__form__agitation">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="page-main__form__agitation-text">Пожалуйста, заполните форму ниже:</span>
+        </p>
+
+      </div>
       <h2 class="visually-hidden">Форма истории</h2>
+      <form class="form-competition" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class=" form-competition__item form-competition__user">
+          <p class="form-competition__user-name">
+            <label for="surname">Фамилия:</label>
+            <input id="surname" type="text" name="surname" value="" placeholder="Укажите фамилию *"></p>
+          <p class="form-competition__user-name">
+            <label for="name">Имя:</label>
+            <input class="form-competition__user-name--long" id="name" type="text" name="name" value=""
+              placeholder="Введите ваше имя *"></p>
+          <p class="form-competition__user-name">
+            <label for="patronymic">Отчество:</label>
+            <input id="patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <div class="form-competition__wrapper form-competition__wrapper-achievement">
+          <fieldset class="form-competition__item form-competition__achievement">
+            <legend class="form-competition__achievement-title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form-competition__achievement-list">
+                <div class="form-competition__group-1">
+              <li class="form-competition__achievement-list-item">
+                <input class="visually-hidden filter-input" type="checkbox" checked name="selfie" id="selfie">
+                <label for="selfie">Сделал селфи с акулой</label></li>
+              <li class="form-competition__achievement-list-item">
+                <input class="visually-hidden filter-input" type="checkbox" checked name="sunburned" id="sunburned">
+                <label for="sunburned">Обгорел на пляже</label></li>
+              </div>
+              <div class="form-competition__group-2">
+              <li class="form-competition__achievement-list-item">
+                <input class="visually-hidden filter-input" type="checkbox" name="Norris" id="Norris">
+                <label for="Norris">Видел Чака Норриса</label></li>
+              <li class="form-competition__achievement-list-item">
+                <input class="visually-hidden filter-input" type="checkbox" name="souvenir" id="souvenir">
+                <label for="souvenir">Накупил сувениров</label></li>
+              </div>
+                <div class="form-competition__group-3">
+              <li class="form-competition__achievement-list-item">
+                <input class="visually-hidden filter-input" type="checkbox" checked name="tower" id="tower">
+                <label for="tower">Удержал башню</label></li>
+              <li class="form-competition__achievement-list-item">
+                <input class="visually-hidden filter-input" type="checkbox" name="smash" id="smash">
+                <label for="smash">Разгромил отель</label></li>
+                </div>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="form-competition__item form-competition__contacts">
+          <legend class="form-competition__contacts-title">Контактная информация</legend>
+          <div class="form-competition__contacts-wrapper">
+            <p class="form-competition__contacts-item">
+              <label for="name">Номер телефона</label>
+              <input id="name" type="text" name="name" value="" placeholder="Номер, пожалуйста"></p>
+            <p class="form-competition__contacts-item">
+              <label for="name">Адрес почты</label>
+              <input id="name" type="text" name="name" value="" placeholder="Введите почту *"></p>
+          </div>
+        </fieldset>
+        <div class="form-competition__wrapper form-competition__wrapper-platform">
+          <fieldset class="form-competition__item form-competition__platform">
+            <legend class="form-competition__platform-title">С каким приложением путешествовали?</legend>
+            <ul class="form-competition__platform-list">
+              <li class="form-competition__platform-list-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="ios" id="ios" checked>
+                <label for="ios">Pink для iOS</label></li>
+              <li class="form-competition__platform-list-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="android" id="android">
+                <label for="android">Pink на Android</label></li>
+              <li class="form-competition__platform-list-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="windows" id="windows">
+                <label for="windows">Windows Phone</label></li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="form-competition__item form-competition__area">
+          <legend class="form-competition__area-title">Опишите свои эмоции</legend>
+          <textarea class="form-competition__area-text"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="form-competition__item form-competition__send">
+          <button class="form-competition__send-btn" type="submit">Отправить форму</button>
+          <div class="form-competition__send-info">
+            <span>*</span>
+            — обязательные <span class="form-competition__send-info-text">для заполнения </span>поля
+          </div>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="page-footer">
@@ -57,7 +148,6 @@
         <a class="page-footer__logo-image ">
           <picture>
             <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logotype-blue-tablet.svg">
             <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink»">
           </picture>
         </a>

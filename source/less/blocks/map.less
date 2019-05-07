@@ -1,0 +1,31 @@
+.map {
+  position: relative;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
+}
+
+.map__size {
+  height: 220px;
+  width: 100%;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .map__size {
+    height: 427px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__size {
+    height: 523px;
+  }
+}

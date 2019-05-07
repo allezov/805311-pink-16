@@ -1,0 +1,107 @@
+.contacts {
+  outline: 2px solid red;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+
+.contacts__question {
+  padding-top: 0;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  font-size: 24px;
+  color: #283645;
+  margin-bottom: 35px;
+}
+
+.contacts__info {
+  text-align: center;
+}
+
+.contacts__info--call {
+  margin-bottom: 17px;
+}
+
+.contacts__info--mail {
+  margin-bottom: 25px;
+}
+
+.contacts__info-item h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #283645;
+  margin-bottom: 5px;
+}
+
+.contacts__info-item p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+  margin: 0;
+  line-height: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    max-width: 620px;
+    margin-top: 70px;
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__info-item {
+    width: 295px;
+    outline: 2px solid;
+  }
+
+  .contacts__question {
+    font-size: 40px;
+    line-height: 47px;
+    padding-top: 0;
+    margin-bottom: 45px;
+  }
+
+  .contacts__info--address {
+    margin: 0 auto;
+    margin-top: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    margin-top: 68px;
+    max-width: 940px;
+  }
+
+  .contacts__question {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 59px;
+  }
+
+  .contacts__info-item {
+    width: 300px;
+  }
+
+  .contacts__info--mail {
+    order: 2;
+  }
+
+  .contacts__info--address {
+    margin: 0 auto;
+  }
+
+  .contacts__info-item h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #283645;
+    margin-bottom: 25px;
+  }
+}
