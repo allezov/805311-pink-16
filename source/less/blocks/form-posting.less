@@ -13,7 +13,7 @@
 }
 
 .form-posting__form {
-  padding-top: 57px;
+  padding-top: 62px;
 }
 
 .form-posting__wrapper {
@@ -58,6 +58,11 @@
   padding: 0;
   margin: 0;
   background: transparent;
+}
+
+.form-posting__item-icon--contrast {
+  width: 32px;
+  height: 32px;
 }
 
 .form-posting__control {
@@ -132,7 +137,9 @@
     max-width: 620px;
     margin: 0 auto;
     justify-content: space-between;
+    padding-top: 57px;
   }
+
 
   .form-posting__photo {
     max-width: 300px;
@@ -174,5 +181,184 @@
 
   .form-posting__item .form-posting__fill {
     padding: 0;
+  }
+
+  .form-posting__item {
+    margin-bottom: 28px;
+  }
+
+  .form-posting__contrast .form-posting__item-icon--contrast {
+    width: 16px;
+    height: 25px;
+    padding-left: 33px;
+  }
+
+  .form-posting__control--fill {
+    display: block;
+  }
+
+  .form-posting__control--contrast {
+    display: block;
+  }
+
+  .form-posting__control--crop {
+    width: 202px;
+    top: -28px;
+    left: 80px;
+  }
+
+  .form-posting__control--crop::after {
+    right: 42px;
+  }
+
+  .form-posting__control--fill {
+    position: absolute;
+    width: 202px;
+    height: 2px;
+    background: black;
+    top: -30px;
+    left: 80px;
+  }
+
+  .form-posting__control--fill::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 163px;
+    top: -6px;
+    background: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .form-posting__control--contrast {
+    position: absolute;
+    width: 202px;
+    height: 2px;
+    background: black;
+    top: -20px;
+    left: 80px;
+  }
+
+  .form-posting__control--contrast::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 92px;
+    top: -6px;
+    background: #f2f2f2;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .form-posting__button-wrapper {
+    max-width: 260px;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    margin: 0 0 0 27px;
+  }
+
+  .form-posting__button-cancel {
+    margin-top: 23px;
+  }
+
+  .form-posting__wrapper {
+    padding-bottom: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-posting__title {
+    padding-top: 0px;
+    padding-bottom: 64px;
+  }
+
+  .form-posting__form {
+    max-width: 940px;
+    padding-top: 45px;
+  }
+
+  .form-posting__photo {
+    margin-left: 80px;
+    padding-top: 12px;
+  }
+
+  .form-posting__post {
+    width: 412px;
+    margin-right: 60px;
+  }
+
+  .form-posting__item {
+    margin-bottom: 12px;
+  }
+
+  .form-posting__item-icon {
+    width: 48px;
+    height: 48px;
+    padding-left: 0;
+    padding-top: 8px;
+  }
+
+  .form-posting__contrast .form-posting__item-icon--contrast {
+    width: 33px;
+    height: 33px;
+    padding-left: 7px;
+  }
+
+  .form-posting__control--crop {
+    width: 288px;
+    top: -32px;
+    left: 94px;
+  }
+
+  .form-posting__control--crop::after {
+    right: 203px;
+  }
+
+  .form-posting__control--fill {
+    width: 288px;
+    top: -34px;
+    left: 94px;
+  }
+
+  .form-posting__control--fill::after {
+    right: 27px;
+  }
+
+  .form-posting__control--contrast {
+    width: 288px;
+    top: -24px;
+    left: 94px;
+  }
+
+  .form-posting__control--contrast::after {
+    right: 114px;
+  }
+
+  .form-posting__button-wrapper {
+    max-width: 412px;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px auto;
+    align-items: flex-end;
+    height: 202px;
+
+  }
+
+  .form-posting__button-post {
+    padding: 16px 40px;
+    margin-left: 2px;
+  }
+
+  .form-posting__button-cancel {
+    padding: 16px 52px;
+  }
+
+  .form-posting__wrapper {
+    padding-bottom: 50px;
   }
 }
