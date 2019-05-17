@@ -50,6 +50,7 @@
 @media (min-width: @tablet-width) {
   .reviews {
     margin-top: 70px;
+    margin-bottom: 0;
   }
 
   .reviews__item {
@@ -69,7 +70,6 @@
 
   .reviews__wrapper {
     max-width: 620px;
-    outline: 2px solid red;
     padding-bottom: 25px;
   }
 
@@ -89,18 +89,19 @@
   }
 
   .reviews__list {
-    background: url("../img/icon-quotes.svg") no-repeat 50% 73px;
-    padding-top: 168px;
+    background: url("../img/icon-quotes.svg") no-repeat 50% 39px;
+    padding-top: 133px;
   }
 
   .reviews__wrapper {
+    box-sizing: border-box;
     max-width: 940px;
+    padding-bottom: 48px;
   }
 
   .reviews__item {
     width: 780px;
     margin: 0 auto;
-    outline: 2px solid green;
   }
 
   .reviews__name {
@@ -137,6 +138,7 @@
     content: "";
     position: absolute;
     background: #bec2c7;
+    opacity: 0.3;
     width: 30px;
     height: 2px;
     left: -4px;
@@ -144,15 +146,36 @@
     transform: rotate(-45deg);
   }
 
+  // .reviews__button--prev:hover::before{
+  //   ba
+  // }
+
   .reviews__button--prev::after {
     content: "";
     position: absolute;
     background: #bec2c7;
+    opacity: 0.3;
     width: 30px;
     height: 2px;
     left: -4px;
     top: 32px;
     transform: rotate(45deg);
+  }
+
+  .reviews__button--prev:hover::before,
+  .reviews__button--prev:hover::after,
+  .reviews__button--next:hover::before,
+  .reviews__button--next:hover::after {
+    background: #7e868f;
+    opacity: 0.6;
+  }
+
+  .reviews__button--prev:active::before,
+  .reviews__button--prev:active::after,
+  .reviews__button--next:active::before,
+  .reviews__button--next:active::after {
+    background: #e9ebec;
+    opacity: 0.1;
   }
 
   .reviews__button--next {
@@ -171,6 +194,7 @@
     content: "";
     position: absolute;
     background: #bec2c7;
+    opacity: 0.3;
     width: 30px;
     height: 2px;
     left: 9px;
@@ -182,6 +206,7 @@
     content: "";
     position: absolute;
     background: #bec2c7;
+    opacity: 0.3;
     width: 30px;
     height: 2px;
     left: 9px;

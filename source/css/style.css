@@ -873,7 +873,7 @@ a {
     margin-top: 65px;
   }
   .page-footer__wrapper {
-    max-width: 940px;
+    max-width: 940px ;
     min-height: 110px;
   }
   .page-footer__develop {
@@ -1652,6 +1652,7 @@ template {
     padding-top: 168px;
   }
   .reviews__wrapper {
+    box-sizing: border-box;
     max-width: 940px;
   }
   .reviews__item {
