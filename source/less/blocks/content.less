@@ -1,19 +1,22 @@
-.content {
-  background: #283645;
-}
+// .content {
+
+//   background-image: url("../img/bg-back-mobile@1x.jpg");
+//   background-repeat: no-repeat;
+//   background-position: 0 0px;
+//   background-color: #1d2631;
+//   background-size: 322px;
+// }
 
 .content__photo {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -67px;
+  background-position: 50% 0;
   background-color: #1d2631;
-  background-size: 322px;
+  background-size: 320px;
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 0 -70px;
-    background-size: 322px;
-    background-color: #1d2631;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -24,18 +27,32 @@
   font-weight: 300;
   text-align: center;
 
-  padding-top: 31px;
+  padding-top: 101px;
   max-width: 280px;
   margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: 321px) {
   .content__photo {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 28%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 777px;
+    background-position: 50% 21px;
 
     @media (min-resolution: @retina-dpi),
       (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 27%;
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .content__photo {
+    background-size: 1195px;
+    background-position: 50% 12%;
+
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 27%;
       background-size: 1195px;
     }
   }
@@ -43,19 +60,23 @@
   .content__title {
     font-size: 50px;
     line-height: 60px;
-    padding-top: 69px;
+    padding-top: 139px;
     max-width: 620px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .content {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0%;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-color: #141b23;
 
     @media (min-resolution: @retina-dpi),
       (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50%;
-      background-size: 3000px;
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-position: 50% 12px;
+      background-size: 2560px;
     }
   }
 
@@ -65,7 +86,7 @@
   }
 
   .content__title {
-    padding-top: 63px;
+    padding-top: 68px;
     max-width: 750px;
   }
 }

@@ -1,3 +1,7 @@
+.page-main__form {
+  margin-bottom: 60px;
+}
+
 .page-main__image-panorama {
   width: 100%;
 }
@@ -21,10 +25,8 @@
   display: none;
 }
 
-.page-main__form {
-  outline: 2px solid green;
-  // max-width: 320px;
-  // margin: 0 auto;
+.page-main__logo-image {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -40,20 +42,24 @@
   }
 
   .page-main__form__agitation {
-
     font-size: 18px;
     max-width: 560px;
-    padding-top: 47px;
+    padding-top: 29px;
   }
 
   .page-main__form__agitation-text {
     display: inline;
     margin: 0;
   }
+
+  .page-main__form {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__wrapper {
+    box-sizing: border-box;
     max-width: 940px;
     padding: 0;
   }
@@ -61,5 +67,9 @@
   .page-main__form__agitation {
     max-width: 780px;
     padding-top: 29px;
+  }
+
+  .page-main__image-panorama {
+    height: 505px;
   }
 }

@@ -1,6 +1,6 @@
 .main-nav {
   // position: relative;
-  // position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -22,14 +22,26 @@
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 9px;
+  left: 3px;
+
 
   width: 36px;
   height: 5px;
 
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+}
+
+.main-nav__toggle:active::before {
+  opacity: 0.3;
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -53,10 +65,21 @@
   height: 5px;
   background-color: #ffffff;
   transform: rotate(45deg);
-  // &:active::before,
-  // &:active::after {
-  //   background-color: rgba(255, 255, 255, 0.3);
-  // }
+}
+
+.main-nav--opened .logo-wrapper {
+  background: #283645;
+}
+
+.main-nav--opened .main-nav__toggle:hover::after,
+.main-nav--opened .main-nav__toggle:hover::before {
+  background-color: #d22856;
+}
+
+.main-nav--opened .main-nav__toggle:active::after,
+.main-nav--opened .main-nav__toggle:active::before {
+  background-color: #d22856;
+  opacity: 0.3;
 }
 
 // .main-nav--closed .main-nav__toggle:active::before {
@@ -72,8 +95,14 @@
 }
 
 .main-nav--opened {
-  position: static;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -70px;
 }
+
+// .main-nav--margin{
+//   margin: 0;
+// }
 
 @media (max-width: 959px) {
   .main-nav--closed .site-list__item {
@@ -99,12 +128,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav--opened .logo-wrapper {
+    background: transparent;
+    border: none;
+  }
+
+
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__list {
-    outline: 2px solid red;
     display: flex;
     width: 620px;
     justify-content: space-between;
@@ -113,6 +147,7 @@
   .main-nav {
     position: static;
     max-width: 960px;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 29px 10px;
     display: flex;

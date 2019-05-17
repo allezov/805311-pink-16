@@ -1,8 +1,6 @@
 .contacts {
-  outline: 2px solid red;
   max-width: 280px;
-  margin: 0 auto;
-  margin-top: 42px;
+  margin: 42px auto 36px;
 }
 
 .contacts__question {
@@ -27,6 +25,19 @@
   margin-bottom: 25px;
 }
 
+.contacts__info--mail a {
+  color: #d22856;
+}
+
+.contacts__info--mail a:hover {
+  color: #283645;
+}
+
+.contacts__info--mail a:active {
+  color: #283645;
+  opacity: 0.3;
+}
+
 .contacts__info-item h3 {
   margin: 0;
   font-weight: 700;
@@ -46,7 +57,8 @@
 @media (min-width: @tablet-width) {
   .contacts {
     max-width: 620px;
-    margin-top: 70px;
+    margin-top: 46px;
+    margin-bottom: 29px;
   }
 
   .contacts__info {
@@ -57,7 +69,6 @@
 
   .contacts__info-item {
     width: 295px;
-    outline: 2px solid;
   }
 
   .contacts__question {
@@ -77,6 +88,8 @@
   .contacts {
     margin-top: 68px;
     max-width: 940px;
+    box-sizing: border-box;
+    margin-bottom: 41px;
   }
 
   .contacts__question {

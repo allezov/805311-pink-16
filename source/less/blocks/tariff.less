@@ -45,9 +45,13 @@
 }
 
 .tariff__wrapper {
+  overflow: hidden;
   background: #f2f2f2;
   padding-top: 92px;
   padding-bottom: 99px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
 
 .tariff__table p {
@@ -76,7 +80,7 @@
 //   position: absolute;
 // }
 
-.tariff__table-item-pink td {
+.tariff__table-item--pink td {
   border-top: none;
 }
 
@@ -140,11 +144,11 @@
   transform: rotate(-44deg);
 }
 
-.tariff__table-title-hit {
+.tariff__table-title--hit {
   position: relative;
 }
 
-.tariff__table-title-hit::before {
+.tariff__table-title--hit::before {
   content: "";
   position: absolute;
   top: 0;
@@ -154,7 +158,7 @@
   background: url("../img/bg-hit.svg") no-repeat;
 }
 
-.tariff__table-title-hit::after {
+.tariff__table-title--hit::after {
   content: "ХИТ";
   transform: rotate(-45deg);
   position: absolute;
@@ -209,8 +213,9 @@
 
 @media (min-width: @tablet-width) {
   .tariff__wrapper {
-    padding-top: 70px;
-    padding-bottom: 44px;
+    padding-top: 108px;
+    padding-bottom: 68px;
+    background-position: 50% 0;
   }
 
   .tariff__table {
@@ -265,12 +270,12 @@
     line-height: 24px;
   }
 
-  .tariff__table-title-hit::before {
+  .tariff__table-title--hit::before {
     left: -1px;
     background: url("../img/bg-hit-tablet.svg") no-repeat;
   }
 
-  .tariff__table-title-hit::after {
+  .tariff__table-title--hit::after {
     top: 3px;
     left: 7px;
     font-size: 13px;
@@ -284,11 +289,13 @@
 @media (min-width: @desktop-width) {
   .tariff__table {
     max-width: 940px;
+    box-sizing: border-box;
   }
 
   .tariff__wrapper {
     padding-top: 143px;
     padding-bottom: 95px;
+    background-position: 50% -9px;
   }
 
   .tariff__table-head {
@@ -321,11 +328,11 @@
     right: 99px;
   }
 
-  .tariff__table-title-hit::before {
+  .tariff__table-title--hit::before {
     background: url("../img/bg-hit.svg") no-repeat;
   }
 
-  .tariff__table-title-hit::after {
+  .tariff__table-title--hit::after {
     content: "ХИТ";
     top: 11px;
     left: 11px;
