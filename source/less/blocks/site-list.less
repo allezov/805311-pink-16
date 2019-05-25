@@ -20,13 +20,11 @@
   color: #d22856;
 }
 
-.site-list__item--active a {
-  border-bottom: 2px solid #ffffff;
+.site-list__item:active a {
+  color: #d22856;
+  opacity: 0.3;
 }
 
-.site-list__item:active a {
-  color: rgba(255, 255, 255, 0.3);
-}
 
 @media (min-width: @desktop-width) {
   .site-list {
@@ -40,5 +38,14 @@
     letter-spacing: 0;
     line-height: 18px;
     padding: 0;
+  }
+
+  .site-list__item--active a {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .site-list__item:active a {
+    color: #ffffff;
+    opacity: 0.3;
   }
 }

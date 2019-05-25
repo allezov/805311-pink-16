@@ -1,0 +1,148 @@
+.popup {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.popup__wrapper {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  width: 320px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.popup__wrapper--ok {
+  bottom: 670px;
+}
+
+.popup__text {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popup__text h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  padding-top: 45px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.popup__text p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  margin-bottom: 40px;
+}
+
+.popup__button {
+  background: #f2f2f2;
+  padding: 50px 0;
+}
+
+.popup__btn {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  padding: 17px 0;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.popup__wrapper--wrong {
+  bottom: 1250px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .popup {
+    width: 460px;
+  }
+
+  .popup__wrapper {
+    width: 460px;
+  }
+
+  .popup__text {
+    width: 320px;
+    padding: 0 70px;
+  }
+
+  .popup__text h3 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .popup__text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__text br {
+    display: none;
+  }
+
+  .popup__wrapper--wrong {
+    bottom: 1730px;
+    padding-bottom: 50px;
+  }
+
+  .popup__wrapper--ok {
+    bottom: 1190px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup {
+    width: 780px;
+  }
+
+  .popup__wrapper {
+    width: 780px;
+  }
+
+  .popup__text {
+    width: 410px;
+  }
+
+  .popup__text h3 {
+    width: auto;
+  }
+
+  .popup__button-wrong {
+    background: #f2f2f2;
+    padding: 50px 0;
+  }
+
+  .popup__wrapper--wrong {
+    bottom: 820px;
+    padding-bottom: 0;
+  }
+
+  .popup__text p {
+    margin-bottom: 60px;
+  }
+
+  .popup__wrapper--ok {
+    bottom: 365px;
+  }
+
+  .popup__wrapper--ok p {
+    margin-bottom: 36px;
+  }
+}

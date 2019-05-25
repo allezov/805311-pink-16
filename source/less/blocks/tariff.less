@@ -16,22 +16,25 @@
   display: none;
 }
 
-// .tariff__table tr {
-//   outline: 1px solid red;
-// }
+.tariff__table-head .qwerty {
+  background: #f2f2f2;
+  border: none;
+  font-size: 0;
+}
 
-// .tariff__table td {
-//   outline: 1px solid green;
-// }
 .tariff__table td {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
-  background: #ffffff;
+
   box-sizing: border-box;
   min-width: 277px;
+}
+
+.tariff__table tr {
+  background: #ffffff;
 }
 
 .tariff__table-title {
@@ -76,15 +79,11 @@
   position: relative;
 }
 
-// .tariff__table-access--no{
-//   position: absolute;
-// }
-
 .tariff__table-item--pink td {
   border-top: none;
 }
 
-.tariff__table-access--yes {
+.tariff__table-access-yes {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -92,7 +91,7 @@
   right: 14px;
 }
 
-.tariff__table-access--yes::before {
+.tariff__table-access-yes::before {
   content: "";
   position: absolute;
   top: 19px;
@@ -103,7 +102,7 @@
   transform: rotate(45deg);
 }
 
-.tariff__table-access--yes::after {
+.tariff__table-access-yes::after {
   content: "";
   position: absolute;
   top: 14px;
@@ -114,7 +113,7 @@
   transform: rotate(-44deg);
 }
 
-.tariff__table-access--no {
+.tariff__table-access-no {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -122,7 +121,7 @@
   right: 14px;
 }
 
-.tariff__table-access--no::before {
+.tariff__table-access-no::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -133,7 +132,7 @@
   transform: rotate(44deg);
 }
 
-.tariff__table-access--no::after {
+.tariff__table-access-no::after {
   content: "";
   position: absolute;
   top: 13px;
@@ -211,6 +210,26 @@
   border-radius: 50%;
 }
 
+.tariff__slider-controls-item-1:hover::after {
+  background: #283645;
+  opacity: 0.6;
+}
+
+.tariff__slider-controls-item-3:hover::after {
+  background: #283645;
+  opacity: 0.6;
+}
+
+.tariff__slider-controls-item-1:active::after {
+  background: #283645;
+  opacity: 0.1;
+}
+
+.tariff__slider-controls-item-3:active::after {
+  background: #283645;
+  opacity: 0.1;
+}
+
 @media (min-width: @tablet-width) {
   .tariff__wrapper {
     padding-top: 108px;
@@ -251,12 +270,12 @@
     display: none;
   }
 
-  .tariff__table-access--yes {
+  .tariff__table-access-yes {
     top: 8px;
     right: 58px;
   }
 
-  .tariff__table-access--no {
+  .tariff__table-access-no {
     top: 8px;
     right: 58px;
   }
@@ -293,9 +312,10 @@
   }
 
   .tariff__wrapper {
-    padding-top: 143px;
+    padding-top: 168px;
     padding-bottom: 95px;
-    background-position: 50% -9px;
+    background-position: 50% -15%;
+    background-size: 2791px;
   }
 
   .tariff__table-head {
@@ -318,12 +338,12 @@
     line-height: 33px;
   }
 
-  .tariff__table-access--yes {
+  .tariff__table-access-yes {
     top: 17px;
     right: 98px;
   }
 
-  .tariff__table-access--no {
+  .tariff__table-access-no {
     top: 15px;
     right: 99px;
   }

@@ -44,6 +44,12 @@
   flex-direction: column;
 }
 
+.user-photo__name-wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
 
 @media (min-width: @tablet-width) {
   .user-photo {
@@ -77,6 +83,10 @@
     padding-left: 27px;
     padding-bottom: 13px;
   }
+
+  .user-photo__name-wrapper {
+    width: 660px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -96,5 +106,9 @@
   .user-photo__name {
     top: 53px;
     right: 10px;
+  }
+
+  .user-photo__name-wrapper {
+    width: 960px;
   }
 }

@@ -15,14 +15,6 @@
   margin: 0;
 }
 
-fieldset label {
-  // outline: 2px solid black;
-}
-
-fieldset input {
-  // outline: 2px solid orangered;
-}
-
 .form-competition__wrapper {
   background: #f2f2f2;
 }
@@ -91,7 +83,7 @@ fieldset input {
   background: #ffffff;
 }
 
-.form-competition__achievement--checkbox[type="checkbox"]:checked + span::before {
+.form-competition__achievement-checkbox[type="checkbox"]:checked + span::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -175,7 +167,7 @@ fieldset input {
   background: #ffffff;
 }
 
-.form-competition__platform--radio[type="radio"]:checked + span::after {
+.form-competition__platform-radio[type="radio"]:checked + span::after {
   position: absolute;
   content: "";
   width: 15px;
@@ -203,13 +195,15 @@ fieldset input {
 }
 
 .form-competition__send-btn {
+  display: block;
+  text-align: center;
   width: 280px;
   padding: 17px 0;
   border: none;
   border-radius: 3px;
   color: #ffffff;
   background-color: #2aab6d;
-  margin-top: 31px;
+  margin-top: 42px;
   margin-bottom: 37px;
   text-transform: uppercase;
   font-weight: 700;
@@ -234,12 +228,32 @@ fieldset input {
   border: 2px solid #283645;
 }
 
+.form-competition input:focus {
+  outline: 2px solid #d22856;
+}
+
 .form-competition input:active {
+  border: 2px solid #d22856;
+}
+
+.form-competition textarea:hover {
+  border: 2px solid #283645;
+}
+
+.form-competition textarea:focus {
+  outline: 2px solid #d22856;
+}
+
+.form-competition textarea:active {
   border: 2px solid #d22856;
 }
 
 .form-competition__achievement-list-item:hover span::before {
   outline: 2px solid #283645;
+}
+
+.form-competition__achievement-checkbox:focus + span::before {
+  outline: 2px solid #d22856;
 }
 
 .form-competition__achievement-list-item:active span::before {
@@ -248,6 +262,10 @@ fieldset input {
 
 .form-competition__platform-list-item:hover span::before {
   border: 2px solid #283645;
+}
+
+.form-competition__platform-radio:focus + span::before {
+  border: 2px solid #d22856;
 }
 
 .form-competition__platform-list-item:active span::before {
@@ -343,12 +361,12 @@ fieldset input {
     top: -5px;
   }
 
-  .form-competition__platform--radio[type="radio"]:checked + span::after {
+  .form-competition__platform-radio[type="radio"]:checked + span::after {
     top: 7px;
     left: -48px;
   }
 
-  .form-competition__achievement--checkbox[type="checkbox"]:checked + span::before {
+  .form-competition__achievement-checkbox[type="checkbox"]:checked + span::before {
     top: -2px;
     left: -58px;
   }
@@ -380,13 +398,13 @@ fieldset input {
     top: 7px;
   }
 
-  .form-competition__item--icon-phone {
+  .form-competition__item-icon-phone {
     background: url("../img/icon-phone.svg") no-repeat 458px 19px;
     position: relative;
     z-index: 1;
   }
 
-  .form-competition__item--icon-mail {
+  .form-competition__item-icon-mail {
     background: url("../img/icon-mail.svg") no-repeat 458px 21px;
     position: relative;
     z-index: 1;
@@ -426,6 +444,7 @@ fieldset input {
 
   .form-competition__send-btn {
     width: 300px;
+    margin-top: 30px;
   }
 
   .form-competition__user-name {
@@ -472,11 +491,11 @@ fieldset input {
     top: 7px;
   }
 
-  .form-competition__item--icon-phone {
+  .form-competition__item-icon-phone {
     background-position: 334px 21px;
   }
 
-  .form-competition__item--icon-mail {
+  .form-competition__item-icon-mail {
     background-position: 334px 23px;
   }
 
@@ -490,7 +509,7 @@ fieldset input {
     width: 340px;
   }
 
-  .form-competition__user-name .form-competition__user-name--long {
+  .form-competition__user-name .form-competition__user-name-long {
     width: 381px;
   }
 
@@ -512,6 +531,7 @@ fieldset input {
 
   .form-competition__contacts-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .form-competition__contacts-item {
@@ -530,11 +550,8 @@ fieldset input {
   }
 
   .form-competition__achievement-list {
-    padding-left: 117px;
-    padding-bottom: 1px;
-    height: 172px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -542,10 +559,11 @@ fieldset input {
     width: 210px;
   }
 
+
   .form-competition__group-2 {
-    margin-left: 105px;
-    margin-right: 85px;
+    padding-left: 20px;
   }
+
 
   .form-competition__achievement-list-item::before {
     left: -58px;
@@ -572,5 +590,9 @@ fieldset input {
 
   .form-competition__send-info-text {
     display: inline;
+  }
+
+  .form-competition__send-btn {
+    margin-top: 35px;
   }
 }
