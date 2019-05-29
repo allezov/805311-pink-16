@@ -12,7 +12,7 @@
   <div class="content">
     <header class="page-header">
       <nav class="main-nav main-nav--opened">
-        <div class="logo-wrapper">
+        <div class="main-nav__logo-wrapper">
           <div class="page-header__logo">
             <svg class="page-header__logo-image page-header__logo-image--mobile" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px"
@@ -245,7 +245,7 @@
         <h2 class="visually-hidden">Тариф</h2>
         <table class="tariff__table">
           <tr class="tariff__table-head">
-            <td class="visually-idden tariff__table-sell-hide  qwerty">Тарифы</td>
+            <td class="tariff__table-sell-hide tariff__empty">Тарифы</td>
             <th class="tariff__table-title">База
               <p class="tariff__cost">1,99 USD</p>
             </th>
@@ -344,10 +344,10 @@
         <iframe class="map__size"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586858!2d30.320853351778755!3d59.93871648178724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557837990008!5m2!1sru!2sru"
           width="600" height="450" style="border:0" allowfullscreen></iframe>
-        <picture>
+        <picture class="map__hidden">
           <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img class="map__photo" src="img/bg-map-mobile@1x.png" alt="Карта" height="150"
+          <img class="map__photo map__hidden-img" src="img/bg-map-mobile@1x.png" alt="Карта" height="150"
             srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.jpg 2x">
         </picture>
       </div>
@@ -360,7 +360,7 @@
           <svg class="page-footer__logo-image page-footer__logo-image-mobile" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
             viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-            <g class="qqqq">
+            <g>
               <path fill="#283645"
                 d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z" />
               <path fill="#283645"

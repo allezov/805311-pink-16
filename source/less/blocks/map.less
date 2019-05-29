@@ -1,19 +1,28 @@
 .map {
   position: relative;
+  overflow: hidden;
 }
 
 .map__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 200px;
+  height: 202px;
   overflow: hidden;
-  position: relative;
+}
+
+.map__hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.map__hidden-img {
+  height: auto;
+  width: 100%;
 }
 
 .map__photo {
   width: 100%;
-  height: auto;
   object-fit: cover;
   margin-top: -443px;
 }
@@ -25,11 +34,12 @@
   background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
   background-size: 100%;
   width: 100%;
-  min-height: 235px;
+  min-height: 70px;
+  z-index: 2;
 }
 
 
-.map__wrapper::before {
+.map::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -38,13 +48,15 @@
   width: 36px;
   height: 36px;
   transform: translate(-50%, -50%);
-  margin-top: 30px;
+  margin-top: 15px;
+  z-index: 1;
 }
 
 .map__size {
   height: 220px;
   width: 100%;
   position: relative;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,8 +70,16 @@
 
 
   .map__photo {
-    margin-top: -346px;
     min-width: 700px;
+    margin-top: -346px;
+  }
+
+  .map::after {
+    min-height: 100px;
+  }
+
+  .map::before {
+    margin-top: 25px;
   }
 }
 
@@ -79,5 +99,13 @@
   .map__photo {
     min-width: 1200px;
     margin-top: -276px;
+  }
+
+  .map::after {
+    min-height: 220px;
+  }
+
+  .map::before {
+    margin-top: 30px;
   }
 }
